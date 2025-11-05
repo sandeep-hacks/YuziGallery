@@ -1,0 +1,3191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+ <meta name="description" content="Buy high-quality posters online at affordable prices. Explore aesthetic, motivational, anime, movie, and gaming wall art prints for your room, office, or home decor. Free shipping & premium quality guaranteed.">
+<meta name="keywords" content="buy posters online, aesthetic wall posters, motivational quotes posters, anime posters, movie posters online, gaming posters, designer posters, wall art prints, modern wall decor, custom poster printing, cool posters for room, trending wall art, premium posters India, affordable posters, home decoration posters, HD print quality, minimalist art prints, sports posters, vintage posters, funny posters, couple posters, office wall decor, gym posters, inspirational quotes posters">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="YUZI GALLERY">
+
+  <!-- Open Graph (for Google + social sharing) -->
+  <meta property="og:title" content="YUZI GALLERY - Modern Poster & Wall Art Shop">
+  <meta property="og:description" content="Shop modern posters, wall art & aesthetic prints. Creative designs that elevate your space.">
+  <meta property="og:image" content="https://ik.imagekit.io/gbhkmaml0k/posters-cover-image.png">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:type" content="website">
+    <title>YUZI GALLERY - Modern Poster Shop</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/gbhkmaml0k/Yellow%20and%20Black%20Circles%20Arts%20and%20Crafts%20Creative%20Agency%20Logo.png?updatedAt=1760593198484">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .poster-image {
+            transition: transform 0.3s ease;
+        }
+        .poster-image:hover {
+            transform: scale(1.05);
+        }
+        .zoomable {
+            transition: transform 0.2s;
+            cursor: zoom-in;
+        }
+        .zoomable.zoomed {
+            transform: scale(1.35);
+            cursor: zoom-out;
+        }
+        .announcement-bar {
+            background: linear-gradient(90deg, #4f46e5, #ec4899);
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-weight: 500;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Free Delivery Marquee -->
+    <div style="background:#fbbf24; color:#1e293b; font-weight:bold; overflow:hidden; white-space:nowrap; position:relative;">
+  <div id="free-delivery-marquee" style="display:inline-block; padding-left:100%; animation: marquee var(--marquee-speed, 25s) linear infinite;">
+    <span style="padding-right:50px;">
+      🚚 Free delivery order above ₹249 🚚 Buy 10 Get a Free Bookmark 🚚 Buy 20 get 2 Free Custom Poster
+    </span>
+    <span style="padding-right:50px;">
+      🚚 Free delivery order above ₹249 🚚 Buy 10 Get a Free Bookmark 🚚 Buy 20 get 2 Free Custom Poster
+    </span>
+  </div>
+</div>
+
+<style>
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Optional: pause on hover */
+#free-delivery-marquee:hover {
+  animation-play-state: paused;
+}
+</style>
+
+    </div>
+    <style>
+        @keyframes marquee {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+    
+    <!-- Announcement Bar -->
+
+
+    <div id="root"></div>
+<button id="scrollTopBtn" 
+  style="display:none;
+         position:fixed;
+         bottom:20px;
+         right:20px;
+         width:40px;
+         height:40px;
+         border:none;
+         border-radius:50%;
+         background:rgba(0,0,0,0.4);  /* light black */
+         color:white;
+         font-size:18px;
+         cursor:pointer;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+         transition:all 0.3s ease;
+         box-shadow:0 2px 6px rgba(0,0,0,0.3);">
+  ↑
+</button>
+
+<script>
+  const btn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    btn.style.display = window.scrollY > 200 ? "flex" : "none";
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Hover effect: darker black
+  btn.addEventListener("mouseenter", () => {
+    btn.style.background = "rgba(0,0,0,0.6)";
+  });
+  btn.addEventListener("mouseleave", () => {
+    btn.style.background = "rgba(0,0,0,0.4)";
+  });
+</script>
+
+
+
+    <script type="text/babel">
+        // Function to scroll containers left/right
+        function scrollContainer(containerId, direction) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                const scrollAmount = container.clientWidth * 0.8; // 80% of container width
+                const scrollTo = direction === 'left' 
+                    ? container.scrollLeft - scrollAmount 
+                    : container.scrollLeft + scrollAmount;
+                container.scrollTo({
+                    left: scrollTo,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Poster data with specific images for each category
+          const categoryImages = {
+            "Naruto": [  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/naruto.png?updatedAt=1759948312938",
+ "https://ik.imagekit.io/gbhkmaml0k/naruto/10.png?updatedAt=1758657188858",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/6.png?updatedAt=1758657204734",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/2.png?updatedAt=1758657203952",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/27.png?updatedAt=1758657195460",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/5.png?updatedAt=1758657202168",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/19.png?updatedAt=1758657200588",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/25.png?updatedAt=1758657195789",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/28.png?updatedAt=1758657182281", 
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/8.png?updatedAt=1758657177382",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/5.png?updatedAt=1758657202168",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/18.png?updatedAt=1758657196285",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/26.png?updatedAt=1758657196270",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/24.png?updatedAt=1758657195498",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/23.png?updatedAt=1758657195397",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/20.png?updatedAt=1758657195245",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/22.png?updatedAt=1758657195126",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/30.png?updatedAt=1758657195049",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/21.png?updatedAt=1758657193933",
+   "https://ik.imagekit.io/gbhkmaml0k/naruto/3.png?updatedAt=1758657205121",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/11.png?updatedAt=1758657185847",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/14.png?updatedAt=1758657183906",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/16.png?updatedAt=1758657184045",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/29.png?updatedAt=1758657183832",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/9.png?updatedAt=1758657183774",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/17.png?updatedAt=1758657183579",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/15.png?updatedAt=1758657183553",
+  // Newly added 3
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/12.png?updatedAt=1758657182791",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/28.png?updatedAt=1758657182281",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/15.png?updatedAt=1758657183553"
+
+            ],
+            "One Piece": [
+               "https://ik.imagekit.io/gbhkmaml0k/one%20piece/3.png?updatedAt=1758735283045",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/1.png?updatedAt=1758735283010",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/2.png?updatedAt=1758735283147",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/6.png?updatedAt=1758735282605",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/7.png?updatedAt=1758735282650",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/5.png?updatedAt=1758735282770",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/4.png?updatedAt=1758735281896",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/25.png?updatedAt=1758735279826",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/24.png?updatedAt=1758735279223",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/19.png?updatedAt=1758735279748",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/18.png?updatedAt=1758735274709",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/26.png?updatedAt=1758735274844",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/27.png?updatedAt=1758735274805",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/30.png?updatedAt=1758735274749",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/23.png?updatedAt=1758735275738",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/22.png?updatedAt=1758735275322",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/20.png?updatedAt=1758735274641",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/21.png?updatedAt=1758735275011",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/11.png?updatedAt=1758735273315",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/10.png?updatedAt=1758735274241",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/29.png?updatedAt=1758735265558",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/28.png?updatedAt=1758735265604",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/15.png?updatedAt=1758735265661",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/12.png?updatedAt=1758735265694",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/13.png?updatedAt=1758735265310",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/16.png?updatedAt=1758735265271",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/9.png?updatedAt=1758735265569",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/17.png?updatedAt=1758735265141",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/8.png?updatedAt=1758735265821",
+  "https://ik.imagekit.io/gbhkmaml0k/one%20piece/14.png?updatedAt=1758735265130"
+            ],
+            "Attack on Titan": [
+               "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/3.png?updatedAt=1758705315451",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/2.png?updatedAt=1758705315072",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/1.png?updatedAt=1758705314948",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/6.png?updatedAt=1758705314683",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/7.png?updatedAt=1758705314631",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/5.png?updatedAt=1758705314229",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/4.png?updatedAt=1758705313023",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/19.png?updatedAt=1758705312274",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/24.png?updatedAt=1758705309292",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/25.png?updatedAt=1758705309095",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/26.png?updatedAt=1758705308837",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/23.png?updatedAt=1758705308708",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/30.png?updatedAt=1758705308489",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/18.png?updatedAt=1758705308446",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/22.png?updatedAt=1758705308346",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/21.png?updatedAt=1758705307559",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/20.png?updatedAt=1758705307382",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/10.png?updatedAt=1758705304561",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/11.png?updatedAt=1758705303453",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/29.png?updatedAt=1758705301623",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/14.png?updatedAt=1758705301534",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/13.png?updatedAt=1758705301189",
+    "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/7.png?updatedAt=1758705314631",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/15.png?updatedAt=1758705300903",
+  "https://ik.imagekit.io/gbhkmaml0k/26.png?updatedAt=1758822237368",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/16.png?updatedAt=1758705300692",
+  "https://ik.imagekit.io/gbhkmaml0k/25.png?updatedAt=1758822237340",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/28.png?updatedAt=1758705300579",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/9.png?updatedAt=1758705299940",
+  "https://ik.imagekit.io/gbhkmaml0k/naruto/aot/8.png?updatedAt=1758705298167"
+
+            ],
+            "Demon Slayer": [
+                 "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/25.png?updatedAt=1758825022332",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/27.png?updatedAt=1758825020935",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/17.png?updatedAt=1758825020869",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/3.png?updatedAt=1758825020718",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/12.png?updatedAt=1758825020919",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/5.png?updatedAt=1758825020681",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/26.png?updatedAt=1758825020584",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/19.png?updatedAt=1758825020516",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/2.png?updatedAt=1758825020539",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/11.png?updatedAt=1758825020493",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/28.png?updatedAt=1758825020433",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/15.png?updatedAt=1758825020377",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/20.png?updatedAt=1758825020286",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/10.png?updatedAt=1758825020282",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/4.png?updatedAt=1758825020242",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/21.png?updatedAt=1758825020244",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/6.png?updatedAt=1758825020285",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/1.png?updatedAt=1758825020023",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/29.png?updatedAt=1758825020211",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/18.png?updatedAt=1758825019974",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/7.png?updatedAt=1758825019944",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/22.png?updatedAt=1758825019671",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/14.png?updatedAt=1758825019448",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/30.png?updatedAt=1758825019380",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/24.png?updatedAt=1758825019433",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/23.png?updatedAt=1758825019414",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/16.png?updatedAt=1758825019350",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/8.png?updatedAt=1758825019365",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/13.png?updatedAt=1758825018944",
+  "https://ik.imagekit.io/gbhkmaml0k/demon%20slayer%202/9.png?updatedAt=1758825005855"
+            ],
+             "Jujutsu Kaisen": [
+                "https://ik.imagekit.io/gbhkmaml0k/jjk/1.png?updatedAt=1758646784376",
+                "https://ik.imagekit.io/gbhkmaml0k/jjk/2.png?updatedAt=1758646783378",
+                "https://ik.imagekit.io/gbhkmaml0k/jjk/7.png?updatedAt=1758646783379",
+                "https://ik.imagekit.io/gbhkmaml0k/jjk/3.png?updatedAt=1758646783031",
+                "https://ik.imagekit.io/gbhkmaml0k/jjk/6.png?updatedAt=1758646782716",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/5.png?updatedAt=1758646782681",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/19.png?updatedAt=1758646780588",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/25.png?updatedAt=1758646776740",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/24.png?updatedAt=1758646774956",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/27.png?updatedAt=1758646774803",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/23.png?updatedAt=1758646774721",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/22.png?updatedAt=1758646774660",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/18.png?updatedAt=1758646774623",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/30.png?updatedAt=1758646774391",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/26.png?updatedAt=1758646774299",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/20.png?updatedAt=1758646774270",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/21.png?updatedAt=1758646774034",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/10.png?updatedAt=1758646768643",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/11.png?updatedAt=1758646764977",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/29.png?updatedAt=1758646763627",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/13.png?updatedAt=1758646763287",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/9.png?updatedAt=1758646763048",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/12.png?updatedAt=1758646762907",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/15.png?updatedAt=1758646762983",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/14.png?updatedAt=1758646762801",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/28.png?updatedAt=1758646762778",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/17.png?updatedAt=1758646762719",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/14.png?updatedAt=1758646762801",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/28.png?updatedAt=1758646762778",
+"https://ik.imagekit.io/gbhkmaml0k/jjk/17.png?updatedAt=1758646762719"
+
+            ],
+            // ... similar patterns for other categories
+          
+              "Dragon Ball": [
+                "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/10.png?updatedAt=1758820058203",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/30.png?updatedAt=1758820058259",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/27.png?updatedAt=1758820058205",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/13.png?updatedAt=1758820058069",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/20.png?updatedAt=1758820058047",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/18.png?updatedAt=1758820057917",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/28.png?updatedAt=1758820057950",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/4.png?updatedAt=1758820057932",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/22.png?updatedAt=1758820057830",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/25.png?updatedAt=1758820057811",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/3.png?updatedAt=1758820057733",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/16.png?updatedAt=1758820057701",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/9.png?updatedAt=1758820057789",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/19.png?updatedAt=1758820057765",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/14.png?updatedAt=1758820057654",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/23.png?updatedAt=1758820057547",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/26.png?updatedAt=1758820057488",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/1.png?updatedAt=1758820057415",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/17.png?updatedAt=1758820057441",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/24.png?updatedAt=1758820057256",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/6.png?updatedAt=1758820057089",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/7.png?updatedAt=1758820057147",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/8.png?updatedAt=1758820057180",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/21.png?updatedAt=1758820056956",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/15.png?updatedAt=1758820056944",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/12.png?updatedAt=1758820056831",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/2.png?updatedAt=1758820056583",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/11.png?updatedAt=1758820056532",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/5.png?updatedAt=1758820055756",
+  "https://ik.imagekit.io/gbhkmaml0k/dragon%20ball%20z/29.png?updatedAt=1758820055366"
+
+            ],
+            "Anime Movies": [
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/2.png?updatedAt=1759061410304",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/11.png?updatedAt=1759061410153",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/29.png?updatedAt=1759061410925",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/19.png?updatedAt=1759061410782",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/25.png?updatedAt=1759061410648",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/14.png?updatedAt=1759061410702",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/26.png?updatedAt=1759061410383",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/3.png?updatedAt=1759061410387",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/18.png?updatedAt=1759061410368",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/4.png?updatedAt=1759061410221",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/6.png?updatedAt=1759061410011",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/5.png?updatedAt=1759061410063",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/9.png?updatedAt=1759061409971",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/10.png?updatedAt=1759061409793",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/23.png?updatedAt=1759061409868",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/7.png?updatedAt=1759061409884",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/17.png?updatedAt=1759061410101",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/21.png?updatedAt=1759061409982",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/1.png?updatedAt=1759061409813",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/12.png?updatedAt=1759061409707",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/30.png?updatedAt=1759061410144",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/13.png?updatedAt=1759061409679",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/28.png?updatedAt=1759061409503",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/20.png?updatedAt=1759061409330",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/16.png?updatedAt=1759061409220",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/15.png?updatedAt=1759061409172",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/24.png?updatedAt=1759061409093",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/27.png?updatedAt=1759061409093",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/22.png?updatedAt=1759061408126",
+  "https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/8.png?updatedAt=1759061402567"],
+           "All Anime": [ "https://ik.imagekit.io/gbhkmaml0k/All%20anime/22.png?updatedAt=1759311171173",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/72.png?updatedAt=1759311170088",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/36.png?updatedAt=1759311170064",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/28.png?updatedAt=1759311169942",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/45.png?updatedAt=1759311169919",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/5.png?updatedAt=1759311169897",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/14.png?updatedAt=1759311169865",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/25.png?updatedAt=1759311169832",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/20.png?updatedAt=1759311169859",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/2.png?updatedAt=1759311169894",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/9.png?updatedAt=1759311169867",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/42.png?updatedAt=1759311169747",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/6.png?updatedAt=1759311169800",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/64.png?updatedAt=1759311169798",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/40.png?updatedAt=1759311169775",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/54.png?updatedAt=1759311169743",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/39.png?updatedAt=1759311169776",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/16.png?updatedAt=1759311169681",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/43.png?updatedAt=1759311169616",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/46.png?updatedAt=1759311169649",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/18.png?updatedAt=1759311169501",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/63.png?updatedAt=1759311134375",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/48.png?updatedAt=1759311157703",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/62.png?updatedAt=1759311163093",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/21.png?updatedAt=1759311163922",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/50.png?updatedAt=1759311164228",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/13.png?updatedAt=1759311164770",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/4.png?updatedAt=1759311165141",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/60.png?updatedAt=1759311165302",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/51.png?updatedAt=1759311165275",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/34.png?updatedAt=1759311165508",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/38.png?updatedAt=1759311166203",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/3.png?updatedAt=1759311166472",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/74.png?updatedAt=1759311166816",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/56.png?updatedAt=1759311166844",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/67.png?updatedAt=1759311166863",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/61.png?updatedAt=1759311166952",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/33.png?updatedAt=1759311167006",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/24.png?updatedAt=1759311167065",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/44.png?updatedAt=1759311167086",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/19.png?updatedAt=1759311167096",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/65.png?updatedAt=1759311167212",
+  "https://ik.imagekit.io/gbhkmaml0k/All%20anime/29.png?updatedAt=1759311167333"
+],
+            "My Hero Academia": [
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/1.png?updatedAt=1758912495370",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/22.png?updatedAt=1758912495751",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/18.png?updatedAt=1758912495503",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/5.png?updatedAt=1758912495994",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/7.png?updatedAt=1758912495404",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/24.png?updatedAt=1758912495328",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/30.png?updatedAt=1758912495230",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/28.png?updatedAt=1758912495198",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/11.png?updatedAt=1758912495072",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/14.png?updatedAt=1758912495180",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/3.png?updatedAt=1758912494857",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/2.png?updatedAt=1758912495017",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/10.png?updatedAt=1758912494865",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/6.png?updatedAt=1758912494783",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/23.png?updatedAt=1758912494482",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/29.png?updatedAt=1758912494727",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/27.png?updatedAt=1758912494549",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/20.png?updatedAt=1758912494456",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/17.png?updatedAt=1758912494478",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/19.png?updatedAt=1758912494582",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/16.png?updatedAt=1758912494414",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/9.png?updatedAt=1758912494472",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/4.png?updatedAt=1758912494257",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/13.png?updatedAt=1758912494335",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/25.png?updatedAt=1758912494306",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/15.png?updatedAt=1758912494145",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/8.png?updatedAt=1758912493980",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/12.png?updatedAt=1758912493871",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/26.png?updatedAt=1758912493753",
+  "https://ik.imagekit.io/gbhkmaml0k/my%20hero%20academia/21.png?updatedAt=1758912493348"],
+
+            "Blue Lock" :["https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/28.png?updatedAt=1759042620619",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/25.png?updatedAt=1759042620172",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/20.png?updatedAt=1759042620099",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/10.png?updatedAt=1759042619938",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/23.png?updatedAt=1759042619874",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/30.png?updatedAt=1759042620009",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/18.png?updatedAt=1759042619945",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/11.png?updatedAt=1759042619991",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/15.png?updatedAt=1759042619821",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/1.png?updatedAt=1759042619653",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/9.png?updatedAt=1759042619587",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/7.png?updatedAt=1759042619519",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/27.png?updatedAt=1759042619493",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/26.png?updatedAt=1759042619578",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/2.png?updatedAt=1759042619431",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/8.png?updatedAt=1759042619410",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/5.png?updatedAt=1759042619427",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/24.png?updatedAt=1759042619296",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/6.png?updatedAt=1759042619384",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/17.png?updatedAt=1759042619345",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/29.png?updatedAt=1759042619267",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/16.png?updatedAt=1759042619197",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/4.png?updatedAt=1759042619045",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/3.png?updatedAt=1759042618904",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/13.png?updatedAt=1759042618829",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/12.png?updatedAt=1759042618765",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/19.png?updatedAt=1759042618685",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/14.png?updatedAt=1759042618609",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/21.png?updatedAt=1759042618628",
+  "https://ik.imagekit.io/gbhkmaml0k/Blue%20Lock/22.png?updatedAt=1759042617528"],
+            "Sports": [
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/20.png?updatedAt=1760165960107",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/22.png?updatedAt=1760165960168",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/40.png?updatedAt=1760165960270",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/7.png?updatedAt=1760165960460",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/6.png?updatedAt=1760165960117",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/11.png?updatedAt=1760165960691",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/27.png?updatedAt=1760165960078",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/1.png?updatedAt=1760165959810",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/26.png?updatedAt=1760165959823",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/12.png?updatedAt=1760165960009",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/39.png?updatedAt=1760165959928",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/14.png?updatedAt=1760165958824",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/31.png?updatedAt=1760165959909",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/38.png?updatedAt=1760165958718",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/2.png?updatedAt=1760165959782",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/21.png?updatedAt=1760165961398",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/36.png?updatedAt=1760165958548",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/8.png?updatedAt=1760165959082",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/33.png?updatedAt=1760165960687",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/17.png?updatedAt=1760165959467",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/34.png?updatedAt=1760165958514",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/9.png?updatedAt=1760165959792",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/29.png?updatedAt=1760165958940",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/15.png?updatedAt=1760165958486",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/24.png?updatedAt=1760165958319",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/13.png?updatedAt=1760165957647",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/28.png?updatedAt=1760165957531",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/3.png?updatedAt=1760165957077",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/37.png?updatedAt=1760165957120",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/5.png?updatedAt=1760165955115",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/30.png?updatedAt=1760165956131",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/25.png?updatedAt=1760165954235",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/23.png?updatedAt=1760165951710",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/32.png?updatedAt=1760165951331",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/4.png?updatedAt=1760165949307",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/16.png?updatedAt=1760165947807",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/10.png?updatedAt=1760165945286",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/19.png?updatedAt=1760165944133",
+  "https://ik.imagekit.io/gbhkmaml0k/sports%202/18.png?updatedAt=1760165938870"
+],
+            "Gamers": [
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/5.png?updatedAt=1760458651848",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/40.png?updatedAt=1760458651944",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/11.png?updatedAt=1760458650427",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/44.png?updatedAt=1760458650018",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/10.png?updatedAt=1760458650489",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/6.png?updatedAt=1760458651756",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/39.png?updatedAt=1760458650542",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/47.png?updatedAt=1760458651785",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/35.png?updatedAt=1760458650469",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/2.png?updatedAt=1760458651186",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/27.png?updatedAt=1760458651550",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/42.png?updatedAt=1760458650151",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/13.png?updatedAt=1760458650949",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/18.png?updatedAt=1760458649949",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/4.png?updatedAt=1760458649355",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/12.png?updatedAt=1760458648839",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/15.png?updatedAt=1760458649513",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/38.png?updatedAt=1760458649002",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/3.png?updatedAt=1760458649834",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/21.png?updatedAt=1760458648359",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/24.png?updatedAt=1760458647069",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/9.png?updatedAt=1760458647646",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/34.png?updatedAt=1760458646979",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/23.png?updatedAt=1760458645907",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/30.png?updatedAt=1760458646745",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/25.png?updatedAt=1760458645845",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/22.png?updatedAt=1760458645703",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/43.png?updatedAt=1760458649079",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/29.png?updatedAt=1760458645309",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/37.png?updatedAt=1760458644395",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/32.png?updatedAt=1760458644571",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/31.png?updatedAt=1760458642275",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/7.png?updatedAt=1760458640613",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/14.png?updatedAt=1760458637941",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/17.png?updatedAt=1760458633055",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/46.png?updatedAt=1760458633467",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/1.png?updatedAt=1760458627385",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/19.png?updatedAt=1760458621784",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/8.png?updatedAt=1760458621266",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/20.png?updatedAt=1760458614147",
+  "https://ik.imagekit.io/gbhkmaml0k/Gamer/26.png?updatedAt=1760458616403",
+ "https://ik.imagekit.io/gbhkmaml0k/Gamer/39.png?updatedAt=1760458650542",
+    "https://ik.imagekit.io/gbhkmaml0k/Gamer/18.png?updatedAt=1760458649949",
+    
+],
+              "Marvels": [  "https://ik.imagekit.io/gbhkmaml0k/Marvel/1.png?updatedAt=1759232197363",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/26.png?updatedAt=1759232197224",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/16.png?updatedAt=1759232197152",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/33.png?updatedAt=1759232196956",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/4.png?updatedAt=1759232196895",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/35.png?updatedAt=1759232196939",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/3.png?updatedAt=1759232196752",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/12.png?updatedAt=1759232196729",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/24.png?updatedAt=1759232196685",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/2.png?updatedAt=1759232196683",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/13.png?updatedAt=1759232196574",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/38.png?updatedAt=1759232196564",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/21.png?updatedAt=1759232196594",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/11.png?updatedAt=1759232196591",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/27.png?updatedAt=1759232196575",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/6.png?updatedAt=1759232196549",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/19.png?updatedAt=1759232196585",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/8.png?updatedAt=1759232196469",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/29.png?updatedAt=1759232196450",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/31.png?updatedAt=1759232196471",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/36.png?updatedAt=1759232196403",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/5.png?updatedAt=1759232196425",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/15.png?updatedAt=1759232196480",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/7.png?updatedAt=1759232196441",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/23.png?updatedAt=1759232196374",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/32.png?updatedAt=1759232196343",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/34.png?updatedAt=1759232196289",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/22.png?updatedAt=1759232196397",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/10.png?updatedAt=1759232196054",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/17.png?updatedAt=1759232196104",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/39.png?updatedAt=1759232195984",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/9.png?updatedAt=1759232195852",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/25.png?updatedAt=1759232195647",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/20.png?updatedAt=1759232195564",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/40.png?updatedAt=1759232195547",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/14.png?updatedAt=1759232195473",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/30.png?updatedAt=1759232195422",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/37.png?updatedAt=1759232195477",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/28.png?updatedAt=1759232194135",
+  "https://ik.imagekit.io/gbhkmaml0k/Marvel/18.png?updatedAt=1759232193943"],
+             "DC": [  "https://ik.imagekit.io/gbhkmaml0k/DC/4.png?updatedAt=1759314102819",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/5.png?updatedAt=1759314102180",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/7.png?updatedAt=1759314102177",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/2.png?updatedAt=1759314101822",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/6.png?updatedAt=1759314101680",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/9.png?updatedAt=1759314101604",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/3.png?updatedAt=1759314101618",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/1.png?updatedAt=1759314101629",
+  "https://ik.imagekit.io/gbhkmaml0k/DC/8.png?updatedAt=1759314101259"],
+         "Mythology": [ "https://ik.imagekit.io/gbhkmaml0k/god/25.png?updatedAt=1759310656851",
+  "https://ik.imagekit.io/gbhkmaml0k/god/10.png?updatedAt=1759310656838",
+  "https://ik.imagekit.io/gbhkmaml0k/god/1.png?updatedAt=1759310656635",
+  "https://ik.imagekit.io/gbhkmaml0k/god/16.png?updatedAt=1759310656647",
+  "https://ik.imagekit.io/gbhkmaml0k/god/23.png?updatedAt=1759310656475",
+  "https://ik.imagekit.io/gbhkmaml0k/god/2.png?updatedAt=1759310656485",
+  "https://ik.imagekit.io/gbhkmaml0k/god/20.png?updatedAt=1759310656545",
+  "https://ik.imagekit.io/gbhkmaml0k/god/28.png?updatedAt=1759310656405",
+  "https://ik.imagekit.io/gbhkmaml0k/god/27.png?updatedAt=1759310656426",
+  "https://ik.imagekit.io/gbhkmaml0k/god/8.png?updatedAt=1759310656314",
+  "https://ik.imagekit.io/gbhkmaml0k/god/4.png?updatedAt=1759310656314",
+  "https://ik.imagekit.io/gbhkmaml0k/god/6.png?updatedAt=1759310656312",
+  "https://ik.imagekit.io/gbhkmaml0k/god/18.png?updatedAt=1759310656391",
+  "https://ik.imagekit.io/gbhkmaml0k/god/21.png?updatedAt=1759310656160",
+  "https://ik.imagekit.io/gbhkmaml0k/god/3.png?updatedAt=1759310656344",
+  "https://ik.imagekit.io/gbhkmaml0k/god/7.png?updatedAt=1759310656073",
+  "https://ik.imagekit.io/gbhkmaml0k/god/11.png?updatedAt=1759310655969",
+  "https://ik.imagekit.io/gbhkmaml0k/god/5.png?updatedAt=1759310655943",
+  "https://ik.imagekit.io/gbhkmaml0k/god/22.png?updatedAt=1759310655863",
+  "https://ik.imagekit.io/gbhkmaml0k/god/13.png?updatedAt=1759310655583",
+  "https://ik.imagekit.io/gbhkmaml0k/god/19.png?updatedAt=1759310655489",
+  "https://ik.imagekit.io/gbhkmaml0k/god/26.png?updatedAt=1759310655459",
+  "https://ik.imagekit.io/gbhkmaml0k/god/15.png?updatedAt=1759310655426",
+  "https://ik.imagekit.io/gbhkmaml0k/god/12.png?updatedAt=1759310654342",
+  "https://ik.imagekit.io/gbhkmaml0k/god/9.png?updatedAt=1759310647438",
+  "https://ik.imagekit.io/gbhkmaml0k/god/17.png?updatedAt=1759310645765",
+  "https://ik.imagekit.io/gbhkmaml0k/god/14.png?updatedAt=1759310645465"],
+            "Quotes":[
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/37.png?updatedAt=1760375770501",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/14.png?updatedAt=1760375770205",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/11.png?updatedAt=1760375769051",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/28.png?updatedAt=1760375767941",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/9.png?updatedAt=1760375768600",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/29.png?updatedAt=1760375768248",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/30.png?updatedAt=1760375766585",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/17.png?updatedAt=1760375766933",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/8.png?updatedAt=1760375767245",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/2.png?updatedAt=1760375766865",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/16.png?updatedAt=1760375765676",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/34.png?updatedAt=1760375765581",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/23.png?updatedAt=1760375763714",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/18.png?updatedAt=1760375758911",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/20.png?updatedAt=1760375758664",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/4.png?updatedAt=1760375758166",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/31.png?updatedAt=1760375752926",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/6.png?updatedAt=1760375752317",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/26.png?updatedAt=1760375751731",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/32.png?updatedAt=1760375751503",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/38.png?updatedAt=1760375749986",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/19.png?updatedAt=1760375750192",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/36.png?updatedAt=1760375750281",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/1.png?updatedAt=1760375749918",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/35.png?updatedAt=1760375749486",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/22.png?updatedAt=1760375748880",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/5.png?updatedAt=1760375745845",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/10.png?updatedAt=1760375744945",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/39.png?updatedAt=1760375743627",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/13.png?updatedAt=1760375739248",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/3.png?updatedAt=1760375736487",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/33.png?updatedAt=1760375733509",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/27.png?updatedAt=1760375732994",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/21.png?updatedAt=1760375732634",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/12.png?updatedAt=1760375733481",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/7.png?updatedAt=1760375729661",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/25.png?updatedAt=1760375728321",
+  "https://ik.imagekit.io/gbhkmaml0k/quotes/15.png?updatedAt=1760375725719"
+]
+        };
+
+        const animeCategories = [
+            
+            "Naruto",
+            "One Piece",
+            "Attack on Titan",
+            "Demon Slayer",
+            "Jujutsu Kaisen",
+            "Dragon Ball",
+            "Anime Movies",
+            "All Anime",
+            "My Hero Academia",
+            "Blue Lock",
+            "Sports",
+            "Gamers",
+           
+            "DC",
+             "Marvels",
+            "Mythology",
+            "Quotes"
+        ];
+
+        let posterId = 1;
+        const posterData = animeCategories.flatMap(category =>
+            Array.from({length: 50}, (_, i) => {
+                // Get the images for this category
+                const categoryImageArray = categoryImages[category];
+                // Use modulo to cycle through available images
+                const imageIndex = i % categoryImageArray.length;
+                
+                return {
+                    id: posterId++,
+                    title: `${category} Poster ${i+1}`,
+                    category: category,
+                    price: 349 + ((i % 6) * 50),
+                    image: categoryImageArray[imageIndex],
+                    description: `High-quality ${category} poster. Printed on premium matte paper.`,
+                    tags: ["anime", category.toLowerCase().replace(/\s/g, ""), "poster"]
+                };
+            })
+        );
+
+        const comboData = {
+            twoPosters: [
+                { id: 'combo2-1', posters: [1, 2], price: 249 , discount: 400 },
+          
+            ],
+            threePosters: [
+                { id: 'combo3-1', posters: [7, 8, 9], price: 999, discount: 148 },
+            
+            ]
+        };
+
+        // Size options with price multipliers
+        const sizeOptions = [
+           
+            { name: "A4", price: 25 },
+             { name: "mini size", price: 9 },
+            { name: "12×18", price: 59 },
+            { name: "A4 with Frame", price: 249 }
+        ];
+
+        // Helper functions for localStorage
+        const storage = {
+            getCart: () => {
+                const cart = localStorage.getItem('posterCart');
+                return cart ? JSON.parse(cart) : [];
+            },
+            saveCart: (cart) => {
+                localStorage.setItem('posterCart', JSON.stringify(cart));
+            },
+            getOrders: () => {
+                const orders = localStorage.getItem('posterOrders');
+                return orders ? JSON.parse(orders) : [];
+            },
+            saveOrder: (order) => {
+                const orders = storage.getOrders();
+                orders.push(order);
+                localStorage.setItem('posterOrders', JSON.stringify(orders));
+            }
+        };
+
+        // Google Sheets integration
+        const saveToGoogleSheets = async (orderData) => {
+            // This would be replaced with your Google Apps Script URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzkl13MdAXXN-aKvJPK6roYDTLOGMQw1tIIpYe8g14oNqAJPWn4Cp5_CYpDf1qwXrtd/exec';
+            try {
+                const response = await fetch(scriptURL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(orderData)
+                });
+                
+                console.log('Order data submitted to Google Sheets');
+            } catch (error) {
+                console.error('Error saving to Google Sheets:', error);
+            }
+        };
+
+        // React Components
+        const { useState, useEffect, useContext, createContext } = React;
+
+        // Create a Cart Context
+        const CartContext = createContext();
+
+        function CartProvider({ children }) {
+            const [cart, setCart] = useState(storage.getCart());
+            const [cartCount, setCartCount] = useState(0);
+
+            useEffect(() => {
+                storage.saveCart(cart);
+                setCartCount(cart.reduce((total, item) => total + item.quantity, 0));
+            }, [cart]);
+
+            const addToCart = (item) => {
+                const existingItemIndex = cart.findIndex(
+                    cartItem => cartItem.id === item.id && cartItem.size === item.size
+                );
+
+                if (existingItemIndex >= 0) {
+                    const updatedCart = [...cart];
+                    updatedCart[existingItemIndex].quantity += item.quantity;
+                    setCart(updatedCart);
+                } else {
+                    setCart([...cart, item]);
+                }
+            };
+
+            const updateCartItem = (index, updates) => {
+                const updatedCart = [...cart];
+                if (updates.quantity <= 0) {
+                    updatedCart.splice(index, 1);
+                } else {
+                    updatedCart[index] = { ...updatedCart[index], ...updates };
+                }
+                setCart(updatedCart);
+            };
+
+            const removeFromCart = (index) => {
+                const updatedCart = [...cart];
+                updatedCart.splice(index, 1);
+                setCart(updatedCart);
+            };
+
+            const clearCart = () => {
+                setCart([]);
+            };
+
+            return (
+                <CartContext.Provider value={{ cart, cartCount, addToCart, updateCartItem, removeFromCart, clearCart }}>
+                    {children}
+                </CartContext.Provider>
+            );
+        }
+
+        function useCart() {
+            return useContext(CartContext);
+        }
+
+        function Navbar() {
+            const { cartCount } = useCart();
+            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+            const categories = [
+              "Naruto",
+            "One Piece",
+            "Attack on Titan",
+            "Demon Slayer",
+            "Jujutsu Kaisen",
+            "Dragon Ball",
+            "Anime Movies",
+            "All Anime",
+            "My Hero Academia",
+            "Blue Lock",
+            "Sports",
+            "Gamers",
+           
+            "DC",
+             "Marvels",
+            "Mythology",
+            "Quotes"
+         
+              
+            ];
+return (
+  <nav className="bg-white shadow-md sticky top-0 z-10">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between h-16">
+        <div className="flex items-center">
+          {/* Removed Home button */}
+          <a href="#home" className="flex-shrink-0 font-bold text-xl text-blue-600">YuziGallery</a>
+          {/* Logo moved to right side of YuziGallery */}
+          <img 
+            src="https://ik.imagekit.io/gbhkmaml0k/logo.png?updatedAt=1758704539964" 
+            alt="Yuzi Gallery Logo" 
+            className="h-8 w-8 ml-2" 
+          />
+          <div className="hidden md:block md:ml-6" style={{ maxWidth: '60vw', overflowX: 'auto', whiteSpace: 'nowrap' }}>
+            <div style={{ display: 'inline-flex' }}>
+              {categories.map(category => (
+                <a
+                  key={category}
+                  href={`#category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                  style={{ whiteSpace: 'nowrap' }}
+                >
+                  {category}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+                <div className="flex items-center">
+                    <a href="#cart" className="text-gray-700 hover:text-blue-600 p-2 relative">
+                        <i className="fas fa-shopping-cart text-lg"></i>
+                        {cartCount > 0 && (
+                            <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                                {cartCount}
+                            </span>
+                        )}
+                    </a>
+                    <a href="#my-orders" className="text-gray-700 hover:text-blue-600 p-2 ml-2">
+                        <i className="fas fa-history text-lg"></i>
+                    </a>
+                    <button 
+                        className="md:hidden ml-4 p-2"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    >
+                        <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'} text-lg`}></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+            <div className="md:hidden bg-white border-t">
+                <div className="px-2 pt-2 pb-3 space-y-1">
+                    {categories.map(category => (
+                        <a
+                            key={category}
+                            href={`#category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            {category}
+                        </a>
+                    ))}
+                </div>
+            </div>
+        )}
+    </nav>
+
+            );
+        }
+
+        function PosterCard({ poster, onSelect }) {
+            // Always show A4/12x18/18x24 prices
+            return (
+                <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-200 hover:shadow-lg p-1">
+                    <div className="overflow-hidden h-48">
+                        <img 
+                            src={poster.image}
+                            alt={poster.title}
+                            className="w-full h-full object-cover poster-image"
+                            onClick={() => onSelect(poster)}
+                        />
+                    </div>
+                    <div className="p-2">
+                        <h3 className="font-semibold text-sm mb-1 truncate">{poster.title}</h3>
+                        <p className="text-gray-600 text-xs mb-1">{poster.category}</p>
+                        <div className="flex flex-col gap-1 mb-1">
+                            <span className="text-blue-600 font-bold text-xs">Mini Size: <del>₹25</del> ₹9</span>
+                            <span className="text-blue-600 font-bold text-xs">A4: <del>₹59</del> ₹25</span>
+                            <span className="text-blue-600 font-bold text-xs">12x18: <del>₹109</del> ₹59</span>
+                            <span className="text-blue-600 font-bold text-xs">A4 with Frame: <del>₹499</del> ₹249</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                            <button 
+                                className="bg-blue-600 text-white px-2 py-1 rounded text-xs hover:bg-blue-700 transition-colors"
+                                onClick={() => onSelect(poster)}
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+         function ComboCard({ combo, type, onSelect }) {
+            const posters = combo.posters.map(id => posterData.find(p => p.id === id));
+            
+            return (
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-yellow-300 mx-auto w-full">
+                    <div className="p-3 bg-yellow-50 border-b border-yellow-200">
+                        <h3 className="font-bold text-lg text-center mb-1">Combo of {type} X12 Posters</h3>
+                        <div><h5 className="font-medium text-base text-center text-gray-700">You Can Customize The 2nd Image</h5></div>
+                    </div>
+                    <div className="p-3">
+                        <div className="grid grid-cols-2 gap-3 mb-4 max-w-xs mx-auto">
+                            {posters.map((poster, index) => (
+                                <img 
+                                    key={index} 
+                                    src={poster.image} 
+                                    alt={poster.title}
+                                    className="w-full h-44 object-cover rounded"
+                                />
+                            ))}
+                        </div>
+                        <div className="flex flex-col items-center gap-3">
+                            <div className="text-center">
+                                <span className="text-blue-600 font-bold text-lg">₹{combo.price}</span>
+                                <span className="text-gray-500 font-bold text-xs ml-2"><del>₹649</del></span>
+                            </div>
+                            <button 
+                                className="bg-blue-600 text-white px-5 py-1.5 rounded-lg hover:bg-blue-700 transition-colors w-full max-w-[160px]"
+                                onClick={() => onSelect(combo, type)}
+                            >
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function ProductDetail({ poster, onClose, isCombo, comboType }) {
+            const { addToCart } = useCart();
+            const [selectedSize, setSelectedSize] = useState(sizeOptions[0]);
+            const [quantity, setQuantity] = useState(1);
+            const [zoomed, setZoomed] = useState(false);
+            
+            let calculatedPrice = isCombo ? poster.price : selectedSize.price;
+            
+            const handleAddToCart = () => {
+                if (isCombo) {
+    addToCart({
+        id: poster.id, // use the combo id as the cart item id
+        posterId: poster.id,
+        title: `Combo of ${comboType} Posters`,
+        category: "Combo",
+        price: poster.price, // full price for the combo
+        image: poster.posters.map(id => posterData.find(p => p.id === id)?.image).filter(Boolean)[0] || posterData[0].image,
+        size: "Combo",
+        quantity: 2, // fixed quantity of 2
+        comboId: poster.id,
+        isCombo: true
+    });
+                } else {
+                    addToCart({
+                        id: `${poster.id}-${selectedSize.name}`,
+                        posterId: poster.id,
+                        title: poster.title,
+                        category: poster.category,
+                        price: calculatedPrice,
+                        image: poster.image,
+                        size: selectedSize.name,
+                        quantity: quantity
+                    });
+                }
+                onClose();
+            };
+
+
+            return (
+                <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+                        <div className="p-4 border-b flex justify-between items-center">
+                            <h2 className="text-xl font-bold">{isCombo ? `Combo of ${comboType} Posters` : poster.title}</h2>
+                            <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+                                <i className="fas fa-times text-xl"></i>
+                            </button>
+                        </div>
+                        <div className="p-4 md:p-6 md:flex">
+                            <div className="md:w-1/2 mb-4 md:mb-0">
+                                
+                                <img 
+    src={isCombo ? posterData.find(p => p.id === poster.posters[0])?.image : poster.image}
+    alt={poster.title}
+    className={`w-full max-h-72 max-w-md mx-auto object-contain rounded-lg ${zoomed ? 'zoomed' : 'zoomable'}`}
+    onClick={() => setZoomed(!zoomed)}
+/
+>
+                                {isCombo && (
+                                    <div className="grid grid-cols-2 gap-2 mt-2">
+                                        {poster.posters.map((id, index) => {
+                                            if (index === 0) return null;
+                                            const comboPoster = posterData.find(p => p.id === id);
+                                               return (
+                                                <img 
+                                                    key={index} 
+                                                    src={comboPoster.image} 
+                                                    alt={comboPoster.title}
+                                                    className="w-full rounded"
+                                                />
+                                            );
+                                         
+                                        })}
+                                    </div>
+                                )}
+                                
+                            </div>
+                            <div className="md:w-1/2 md:pl-6">
+                                {!isCombo && (
+                                    <>
+                                        <p className="text-gray-600 mb-4">{poster.description}</p>
+                                        <div className="mb-4">
+                                            <h3 className="font-semibold mb-2">Size Options:</h3>
+                                            <div className="grid grid-cols-2 gap-2">
+                                                {sizeOptions.map(size => (
+                                                    <button
+                                                        key={size.name}
+                                                        className={`border rounded py-2 ${selectedSize.name === size.name ? 'border-blue-600 bg-blue-50 text-blue-600' : 'border-gray-300'}`}
+                                                        onClick={() => {
+                                                            setSelectedSize(size);
+                                                            setQuantity(1);
+                                                        }}
+                                                    >
+                                                        {size.name} (₹{size.price})
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        </div>
+                                         <div className="mb-4">
+                                             <h3 className="font-semibold mb-2">Quantity:</h3>
+                                             <div className="flex items-center">
+                                                 <button 
+                                                     className="bg-gray-200 w-8 h-8 rounded-l"
+                                                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                                                     disabled={quantity <= 1}
+                                                 >
+                                                     -
+                                                 </button>
+                                                 <span className="border-t border-b w-10 h-8 flex items-center justify-center">
+                                                     {quantity}
+                                                 </span>
+                                                 <button 
+                                                     className="bg-gray-200 w-8 h-8 rounded-r"
+                                                     onClick={() => setQuantity(quantity + 1)}
+                                                 >
+                                                     +
+                                                 </button>
+                                             </div>
+                                         </div>
+                                    </>
+                                )}
+                                <div className="mb-4">
+                                    <h3 className="font-semibold">Price: <span className="text-blue-600">₹{calculatedPrice * quantity}</span></h3>
+                                    {isCombo && (
+                                        <p className="text-sm text-gray-600">You save ₹{poster.discount} compared to buying individually!</p>
+                                    )}
+                                </div>
+                                <div className="flex space-x-2">
+                                    <button 
+                                        className="bg-blue-600 text-white py-2 px-4 rounded flex-1 hover:bg-blue-700 transition-colors"
+                                        onClick={handleAddToCart}
+                                    >
+                                        Add to Cart
+                                    </button>
+                                    <button 
+                                        className="bg-green-600 text-white py-2 px-4 rounded flex-1 hover:bg-green-700 transition-colors"
+                                        onClick={() => {
+                                            handleAddToCart();
+                                            window.location.hash = '#cart';
+                                        }}
+                                    >
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+function Cart() {
+    const { cart, updateCartItem, removeFromCart, clearCart, addToCart } = useCart();
+    const [cartItems, setCartItems] = useState(cart);
+    const [showOptionalProduct, setShowOptionalProduct] = useState(true);
+    const [couponCode, setCouponCode] = useState('');
+    const [discount, setDiscount] = useState(0);
+    const [couponError, setCouponError] = useState('');
+    
+    useEffect(() => {
+        setCartItems(cart);
+    }, [cart]);
+    
+    // Optional product details
+    const optionalProduct = {
+        id: 'optional-Cellotape',
+        title: 'Double Sided CelloTape',
+        price: 15,
+        image: 'https://ik.imagekit.io/gbhkmaml0k/31XK6GwG-wL._AC_UL320_.jpg?updatedAt=1760514198382', // Replace with your image
+        size: '3 Metre',
+        quantity: 1
+    };
+
+    // Check if optional product is already in cart
+    const hasOptionalProduct = cartItems.some(item => item.id === optionalProduct.id);
+    
+    // Handle coupon code
+    const handleCouponSubmit = (e) => {
+        e.preventDefault();
+        if (couponCode.toUpperCase() === 'YUZI20') {
+            setDiscount(20);
+            setCouponError('Coupon applied successfully!');
+        } else {
+            setDiscount(0);
+            setCouponError('Invalid coupon code');
+        }
+    };
+
+    // Calculate subtotal
+    const a4Count = cartItems.filter(item => item.size === 'A4').reduce((sum, item) => sum + item.quantity, 0);
+    const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    let shipping = 50;
+    if (a4Count >= 10 || subtotal >= 249) shipping = 0;
+    const total = subtotal + shipping - discount;
+    
+    // Check if order qualifies for free bookmark
+    const hasFreeBookmark = subtotal >= 999;
+    
+    const handleUpdateQuantity = (index, newQuantity) => {
+        if (newQuantity < 1) return;
+        updateCartItem(index, { quantity: newQuantity });
+    };
+    
+    const handleAddOptionalProduct = () => {
+        addToCart(optionalProduct);
+        setShowOptionalProduct(false);
+    };
+    
+    const handleSkipOptionalProduct = () => {
+        setShowOptionalProduct(false);
+    };
+    
+    const handleProceedToCheckout = () => {
+        if (cartItems.length > 0) {
+            window.location.hash = '#checkout';
+        }
+    };
+    
+    return (
+        <div className="max-w-4xl mx-auto p-4">
+            <h1 className="text-2xl font-bold mb-6">Your Cart</h1>
+            
+            {cartItems.length === 0 ? (
+                <div className="text-center py-12">
+                    <i className="fas fa-shopping-cart text-4xl text-gray-300 mb-4"></i>
+                    <p className="text-gray-600">Your cart is empty</p>
+                    <a href="#home" className="text-blue-600 hover:underline mt-2 inline-block">Continue Shopping</a>
+                </div>
+            ) : (
+                <>
+                    {/* Optional Product Suggestion */}
+                    {showOptionalProduct && !hasOptionalProduct && (
+                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                            <div className="flex flex-col md:flex-row items-center justify-between">
+                                <div className="flex items-center mb-4 md:mb-0">
+                                    <img 
+                                        src={optionalProduct.image} 
+                                        alt={optionalProduct.title}
+                                        className="w-16 h-16 object-cover rounded mr-4"
+                                    />
+                                    <div>
+                                        <h3 className="font-semibold">{optionalProduct.title}</h3>
+                                        <p className="text-gray-600 text-sm">{optionalProduct.size}</p>
+                                        <p className="text-green-600 font-bold">₹{optionalProduct.price}</p>
+                                    </div>
+                                </div>
+                                <div className="flex space-x-2">
+                                
+                                    <button 
+                                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+                                        onClick={handleAddOptionalProduct}
+                                    >
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                        <div className="hidden md:grid grid-cols-12 gap-4 p-4 border-b bg-gray-50 font-semibold">
+                            <div className="col-span-5">Product</div>
+                            <div className="col-span-2">Price</div>
+                            <div className="col-span-2">Quantity</div>
+                            <div className="col-span-2">Total</div>
+                            <div className="col-span-1">Action</div>
+                        </div>
+                        {cartItems.map((item, index) => (
+                            <div key={`${item.id}-${index}`} className="p-4 border-b grid grid-cols-6 md:grid-cols-12 gap-4 items-center">
+                                <div className="col-span-3 md:col-span-5 flex items-center">
+                                    <img src={item.image} alt={item.title} className="w-16 h-16 object-cover rounded" />
+                                    <div className="ml-3">
+                                        <h3 className="font-semibold text-sm">{item.title}</h3>
+                                        <p className="text-gray-600 text-xs">{item.category}</p>
+                                        <p className="text-gray-600 text-xs">Size: {item.size}</p>
+                                    </div>
+                                </div>
+                                <div className="col-span-3 md:col-span-2 text-right md:text-left">
+                                    <span className="md:hidden text-xs text-gray-600 mr-1">Price: </span>
+                                    ₹{item.price}
+                                </div>
+                                <div className="col-span-2 md:col-span-2">
+                                    <div className="flex items-center">
+                                        <button 
+                                            className="bg-gray-200 w-6 h-6 rounded-l"
+                                            onClick={() => handleUpdateQuantity(index, item.quantity - 1)}
+                                        >
+                                            -
+                                        </button>
+                                        <span className="border-t border-b w-8 h-6 flex items-center justify-center text-sm">
+                                            {item.quantity}
+                                        </span>
+                                        <button 
+                                            className="bg-gray-200 w-6 h-6 rounded-r"
+                                            onClick={() => handleUpdateQuantity(index, item.quantity + 1)}
+                                        >
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="col-span-2 md:col-span-2 text-right md:text-left">
+                                    <span className="md:hidden text-xs text-gray-600 mr-1">Total: </span>
+                                    ₹{item.price * item.quantity}
+                                </div>
+                                <div className="col-span-2 md:col-span-1 text-right">
+                                    <button 
+                                        className="text-red-500 hover:text-red-700"
+                                        onClick={() => removeFromCart(index)}
+                                    >
+                                        <i className="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className="flex justify-between mb-4">
+                        <button 
+                            className="text-blue-600 hover:underline"
+                            onClick={clearCart}
+                        >
+                            Clear Cart
+                        </button>
+                        <button 
+                            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            onClick={handleProceedToCheckout}
+                        >
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                    
+                    <div className="bg-white rounded-lg shadow-md p-6 max-w-md ml-auto">
+                        <h2 className="text-lg font-semibold mb-4">Order Summary</h2>
+                        <div className="flex justify-between mb-2">
+                            <span>Subtotal</span>
+                            <span>₹{subtotal}</span>
+                        </div>
+                        {hasFreeBookmark && (
+                            <div className="flex justify-between mb-2 text-green-600">
+                                <span>Free Bookmark</span>
+                                <span>FREE</span>
+                            </div>
+                        )}
+                        <div className="flex justify-between mb-2">
+                            <span>Shipping</span>
+                            <span>
+                                {shipping === 0 ? (
+                                    <>
+                                        <span className="line-through text-gray-400 mr-1">₹50</span>
+                                        <span className="text-green-600 font-semibold">FREE DELIVERY</span>
+                                    </>
+                                ) : (
+                                    `₹${shipping}`
+                                )}
+                            </span>
+                        </div>
+                        
+                        {/* Coupon Code Section */}
+                        <div className="mb-4">
+                            <form onSubmit={handleCouponSubmit} className="flex space-x-2">
+                                <div className="flex-1 relative">
+                                    <input
+                                        type="text"
+                                        value={couponCode}
+                                        onChange={(e) => setCouponCode(e.target.value.toUpperCase())}
+                                        placeholder="Enter coupon code"
+                                        className="w-full px-3 py-2 border rounded-md text-sm pr-8"
+                                    />
+                                    {couponCode && (
+                                        <button
+                                            type="button"
+                                            onClick={() => {
+                                                setCouponCode('');
+                                                setDiscount(0);
+                                                setCouponError('');
+                                            }}
+                                            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                                            aria-label="Clear coupon code"
+                                        >
+                                            ✕
+                                        </button>
+                                    )}
+                                </div>
+                                <button
+                                    type="submit"
+                                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm"
+                                >
+                                    Apply
+                                </button>
+                            </form>
+                            {couponError && (
+                                <p className={`text-sm mt-1 ${couponError.includes('success') ? 'text-green-600' : 'text-red-600'}`}>
+                                    {couponError}
+                                </p>
+                            )}
+                        </div>
+                        {discount > 0 && (
+                            <div className="flex justify-between mb-2 text-green-600">
+                                <span>Discount</span>
+                                <span>-₹{discount}</span>
+                            </div>
+                        )}
+                        
+                        <div className="border-t pt-2 mt-2 font-semibold text-lg flex justify-between">
+                            <span>Total</span>
+                            <span>₹{total}</span>
+                        </div>
+                        {hasFreeBookmark && (
+                            <p className="text-sm text-green-600 mt-2">🎉 You qualify for a free bookmark!</p>
+                        )}
+                        <div className="text-xs text-gray-500 mb-2 text-right">
+                            Order Above ₹249 for free delivery
+                        </div>
+                    </div>
+                </>
+            )}
+        </div>
+    );
+}
+
+        function Checkout() {
+            const { cart, clearCart } = useCart();
+            const [orderDetails, setOrderDetails] = useState({
+                name: '',
+                phone: '',
+                address: ''
+            });
+            const [showPaymentModal, setShowPaymentModal] = useState(false);
+            const [screenshot, setScreenshot] = useState(null);
+            const [paymentMethod, setPaymentMethod] = useState('online');
+            
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const shipping = subtotal >= 249 ? 0 : 50;
+            // Apply ₹20 discount for online payments
+            const onlineDiscount = paymentMethod === 'online' ? 20 : 0;
+            const total = Math.max(0, subtotal + shipping - onlineDiscount);
+            
+            const handleInputChange = (e) => {
+                setOrderDetails({
+                    ...orderDetails,
+                    [e.target.name]: e.target.value
+                });
+            };
+            
+            const handleScreenshotUpload = (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        setScreenshot(event.target.result);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            
+            const handlePlaceOrder = () => {
+                if (!orderDetails.name || !orderDetails.phone || !orderDetails.address) {
+                    alert('Please fill in all required fields');
+                    return;
+                }
+                
+                const orderId = 'ORD' + Date.now();
+                
+                // Add free bookmark if order qualifies
+                let orderItems = [...cart];
+                if (subtotal >= 999) {
+                    const freeBookmark = posterData.find(p => p.id === 8);
+                    orderItems.push({
+                        id: 'free-bookmark',
+                        posterId: 8,
+                        title: 'Free Bookmark',
+                        category: 'Naruto',
+                        price: 0,
+                        image: freeBookmark.image,
+                        size: 'Free',
+                        quantity: 1
+                    });
+                }
+                
+                const order = {
+                    id: orderId,
+                    date: new Date().toISOString(),
+                    items: orderItems,
+                    subtotal: subtotal,
+                    shipping: shipping,
+                    discount: onlineDiscount,
+                    total: total,
+                    customer: orderDetails,
+                    paymentMethod: paymentMethod,
+                    status: paymentMethod === 'cod' ? 'pending' : 'confirmed'
+                };
+                
+                // Save to localStorage
+                storage.saveOrder(order);
+                
+                // Save to Google Sheets
+                saveToGoogleSheets(order);
+                
+                clearCart();
+                
+                // If paid online, redirect to WhatsApp with message
+                if (paymentMethod === 'online') {
+                    const waMsg = encodeURIComponent(`Hey, I have paid for Order #${orderId}. Please check it.`);
+                    window.open(`https://wa.me/917488468139?text=${waMsg}`, '_blank');
+                }
+                // Redirect to order confirmation
+                window.location.hash = `#order-confirmation/${orderId}`;
+            };
+            
+            const handleProceedToPayment = () => {
+                if (!orderDetails.name || !orderDetails.phone || !orderDetails.address) {
+                    alert('Please fill in all required fields');
+                    return;
+                }
+                setShowPaymentModal(true);
+            };
+            
+        return (
+    <div className="max-w-4xl mx-auto p-4">
+        <h1 className="text-2xl font-bold mb-6">Checkout</h1>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+            <div className="md:col-span-2">
+                <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h2 className="text-lg font-semibold mb-4">Shipping Information</h2>
+                    <div className="space-y-4">
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                            <input 
+                                type="text" 
+                                name="name"
+                                value={orderDetails.name}
+                                onChange={handleInputChange}
+                                className="w-full border border-gray-300 rounded px-3 py-2"
+                                required
+                                placeholder="Enter your full name"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                            <input 
+                                type="tel" 
+                                name="phone"
+                                value={orderDetails.phone}
+                                onChange={handleInputChange}
+                                className="w-full border border-gray-300 rounded px-3 py-2"
+                                required
+                                placeholder="Enter your phone number"
+                            />
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                      
+                        </div>
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Shipping Address *</label>
+                            <textarea 
+                                name="address"
+                                value={orderDetails.address}
+                                onChange={handleInputChange}
+                                className="w-full border border-gray-300 rounded px-3 py-2"
+                                rows="3"
+                                required
+                                placeholder="Enter your Complete address (house number, Pincode, area, landmark, etc.)"
+                            ></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+                        <div className="md:col-span-1">
+                            <div className="bg-white rounded-lg shadow-md p-6 sticky top-4">
+                                <h2 className="text-lg font-semibold mb-4">Order Summary</h2>
+                                {cart.map(item => (
+                                    <div key={item.id} className="flex justify-between mb-2 text-sm">
+                                        <span>{item.title} x{item.quantity}</span>
+                                        <span>₹{item.price * item.quantity}</span>
+                                    </div>
+                                ))}
+                                {subtotal >= 999 && (
+                                    <div className="flex justify-between mb-2 text-green-600">
+                                        <span>Free Bookmark</span>
+                                        <span>FREE</span>
+                                    </div>
+                                )}
+                                <div className="border-t pt-2 mt-2">
+                                    <div className="flex justify-between mb-2">
+                                        <span>Subtotal</span>
+                                        <span>₹{subtotal}</span>
+                                    </div>
+                                    <div className="flex justify-between mb-2">
+                                        <span>Shipping </span>
+                                       
+                                        <span>{shipping === 0 ? 'FREE' : `₹${shipping}`}</span>
+                                        
+                                    </div>
+                                     <div>Order Above ₹249 for free delivery</div>
+                                    {subtotal >= 249 && (
+                                        <div className="flex justify-between mb-2 text-green-600">
+                                            <span>Free shipping applied!</span>
+                                            <span></span>
+                                        </div>
+                                    )}
+                                    {paymentMethod === 'online' && (
+                                        <div className="flex justify-between mb-2 text-green-600">
+                                            <span>Online Discount</span>
+                                            <span>-₹20</span>
+                                        </div>
+                                    )}
+                                    <div className="border-t pt-2 mt-2 font-semibold text-lg flex justify-between">
+                                        <span>Total</span>
+                                        <span>₹{total}</span>
+                                    </div>
+                                </div>
+                                
+                                <button 
+                                    className="w-full bg-blue-600 text-white py-3 rounded mt-4 hover:bg-blue-700 transition-colors"
+                                    onClick={handleProceedToPayment}
+                                >
+                                    Proceed to Payment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Payment Modal */}
+                    {showPaymentModal && (
+                        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+                            <div className="bg-white rounded-lg max-w-md w-full p-6">
+                                <h2 className="text-xl font-bold mb-4">Complete Your Payment</h2>
+                                
+                                {/* Payment method selection */}
+                                <div className="mb-4">
+                                    <label className="block text-sm font-medium text-gray-700 mb-2">Payment Method:</label>
+                                    <div className="flex space-x-4">
+                                        <button
+                                            className={`px-4 py-2 rounded ${paymentMethod === 'online' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                                            onClick={() => setPaymentMethod('online')}
+                                        >
+                                            Online Payment
+                                        </button>
+                                        <button
+                                            className={`px-4 py-2 rounded ${paymentMethod === 'cod' ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+                                            onClick={() => setPaymentMethod('cod')}
+                                        >
+                                            Cash on Delivery
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div className="text-center mb-6">
+                                    {paymentMethod === 'online' ? (
+                                        <>
+                                            <p className="mb-4">Scan the QR code to pay ₹{total}</p>
+                                            <div className="bg-gray-200 p-4 inline-block rounded-lg mb-4">
+                                                <img src="https://ik.imagekit.io/gbhkmaml0k/Anime%20Movies/qr.png?updatedAt=1759079056580" alt="QR Code" className="w-48 h-48" />
+                                            </div>
+                                            <p className="text-sm text-gray-600 mb-4">After payment, take a screenshot and upload it below</p>
+                                            
+                                            <div className="mb-4">
+                                                <label className="block text-sm font-medium text-gray-700 mb-2">Upload Payment Screenshot</label>
+                                                <input 
+                                                    type="file" 
+                                                    accept="image/*" 
+                                                    onChange={handleScreenshotUpload}
+                                                    className="w-full"
+                                                />
+                                                {screenshot && (
+                                                    <div className="mt-2">
+                                                        <img src={screenshot} alt="Payment proof" className="w-32 h-32 object-contain border" />
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <div className="mb-4 p-4 bg-yellow-50 rounded-lg">
+                                            <p className="text-yellow-800">You've selected Cash on Delivery. Get ₹20 off on pay online. </p>
+                                        </div>
+                                    )}
+                                    
+                                    <div className="flex space-x-2">
+                                        <button 
+                                            className="flex-1 bg-gray-300 text-gray-800 py-2 rounded hover:bg-gray-400 transition-colors"
+                                            onClick={() => setShowPaymentModal(false)}
+                                        >
+                                            Cancel
+                                        </button>
+                                        <button 
+                                            className="flex-1 bg-green-600 text-white py-2 rounded hover:bg-green-700 transition-colors"
+                                            onClick={handlePlaceOrder}
+                                        >
+                                            {paymentMethod === 'online' ? 'I Have Paid' : 'Place COD Order'}
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                {paymentMethod === 'online' && (
+                                    <div className="text-center mt-4">
+                                        <a 
+                                            href={`https://wa.me/917488468139?text=Hi, I paid for Order #ORD${Date.now()}. Amount: ₹${total}. Please confirm.`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center text-blue-600 hover:underline"
+                                        >
+                                            <i className="fab fa-whatsapp text-2xl mr-2"></i>
+                                            Contact on WhatsApp for Verification
+                                        </a>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        function OrderConfirmation({ orderId }) {
+            const orders = storage.getOrders();
+            const order = orders.find(o => o.id === orderId);
+            
+            if (!order) {
+                return (
+                    <div className="max-w-4xl mx-auto p-4 text-center">
+                        <h1 className="text-2xl font-bold mb-4">Order Not Found</h1>
+                        <p>The order you're looking for doesn't exist.</p>
+                    </div>
+                );
+            }
+            
+            return (
+                <div className="max-w-4xl mx-auto p-4">
+                    <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div className="text-green-500 text-5xl mb-4">
+                            <i className="fas fa-check-circle"></i>
+                        </div>
+                        <h1 className="text-2xl font-bold mb-2">Order Placed Successfully!</h1>
+                        <p className="text-gray-600 mb-6">Thank you for your purchase. Your order has been confirmed.</p>
+                        
+                        <div className="bg-gray-50 rounded-lg p-4 max-w-md mx-auto mb-6">
+                            <h2 className="font-semibold mb-4">Order Details</h2>
+                            <div className="mb-3">
+                                <p>Order ID: <span className="font-mono">{order.id}</span></p>
+                                <p>Order Total: <span className="font-semibold">₹{order.total}</span></p>
+                                <p>Payment Method: <span className="font-semibold">{order.paymentMethod === 'cod' ? 'Cash on Delivery' : 'Online Payment'}</span></p>
+                                <p>Date: <span>{new Date(order.date).toLocaleDateString()}</span></p>
+                            </div>
+
+                            {/* Ordered Items with images */}
+                            <div className="space-y-3">
+                                {order.items.map((it, idx) => (
+                                    <div key={idx} className="flex items-center gap-3 border rounded p-2">
+                                        <img src={it.image || (posterData.find(p=>p.id===it.posterId)?.image)} alt={it.title} className="w-16 h-16 object-cover rounded" />
+                                        <div className="flex-1">
+                                            <div className="font-medium">{it.title}</div>
+                                            <div className="text-xs text-gray-600">Size: {it.size || 'Standard'}</div>
+                                            <div className="text-xs text-gray-600">Qty: {it.quantity}</div>
+                                        </div>
+                                        <div className="text-right">
+                                            <div className="font-semibold">₹{it.price * it.quantity}</div>
+                                            <div className="text-xs text-gray-500">(₹{it.price} ea)</div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        
+                        <div className="flex justify-center space-x-4">
+                            <a 
+                                href="#my-orders"
+                                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                            >
+                                View My Orders
+                            </a>
+                            <a 
+                                href="#home"
+                                className="bg-gray-200 text-gray-800 px-6 py-2 rounded hover:bg-gray-300 transition-colors"
+                            >
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        function MyOrders() {
+            const [orders, setOrders] = React.useState(storage.getOrders());
+
+            // Cancel order handler
+            const handleCancelOrder = (orderId) => {
+                // Show a prompt with textarea for reason
+                let reason = '';
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100vw';
+                modal.style.height = '100vh';
+                modal.style.background = 'rgba(0,0,0,0.4)';
+                modal.style.display = 'flex';
+                modal.style.alignItems = 'center';
+                modal.style.justifyContent = 'center';
+                modal.style.zIndex = '9999';
+                modal.innerHTML = `
+                    <div style="background: white; padding: 2rem; border-radius: 0.5rem; max-width: 90vw; width: 350px; box-shadow: 0 2px 16px #0002;">
+                        <h2 style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">Cancel Order</h2>
+                        <label style="font-size: 1rem;">Why are you cancelling this order?</label>
+                        <textarea id="cancel-reason" style="width: 100%; min-height: 60px; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 0.25rem; padding: 0.5rem; resize: vertical;"></textarea>
+                        <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
+                            <button id="cancel-cancel" style="background: #e5e7eb; color: #374151; border: none; padding: 0.5rem 1rem; border-radius: 0.25rem;">Back</button>
+                            <button id="cancel-confirm" style="background: #ef4444; color: white; border: none; padding: 0.5rem 1rem; border-radius: 0.25rem;">Cancel Order</button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                document.getElementById('cancel-cancel').onclick = () => document.body.removeChild(modal);
+                document.getElementById('cancel-confirm').onclick = () => {
+                    reason = document.getElementById('cancel-reason').value.trim();
+                    if (!reason) {
+                        document.getElementById('cancel-reason').style.borderColor = '#ef4444';
+                        document.getElementById('cancel-reason').focus();
+                        return;
+                    }
+                    document.body.removeChild(modal);
+                    const updatedOrders = orders.filter(order => order.id !== orderId);
+                    setOrders(updatedOrders);
+                    localStorage.setItem('posterOrders', JSON.stringify(updatedOrders));
+                    // Optionally, store or send the reason somewhere
+                    alert('Order cancelled. Reason: ' + reason);
+                };
+            };
+
+            return (
+                <div className="max-w-4xl mx-auto p-4">
+                    <h1 className="text-2xl font-bold mb-6">My Orders</h1>
+                    {orders.length === 0 ? (
+                        <div className="text-center py-12">
+                            <i className="fas fa-history text-4xl text-gray-300 mb-4"></i>
+                            <p className="text-gray-600">You haven't placed any orders yet</p>
+                            <a href="#home" className="text-blue-600 hover:underline mt-2 inline-block">Browse Posters</a>
+                        </div>
+                    ) : (
+                        <div className="space-y-6">
+                            {orders.slice().reverse().map(order => (
+                                <div key={order.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                                    {/* Items first (show at top) */}
+                                    <div className="p-4">
+                                        <h4 className="font-medium mb-3">Items</h4>
+                                        <div className="space-y-3">
+                                            {order.items.map((item, index) => (
+                                                <div key={index} className="flex items-center gap-3">
+                                                    <img src={item.image || (posterData.find(p=>p.id===item.posterId)?.image)} alt={item.title} className="w-16 h-16 object-cover rounded" />
+                                                    <div className="flex-1">
+                                                        <div className="font-medium">{item.title}</div>
+                                                        <div className="text-xs text-gray-600">Size: {item.size || 'Standard'}</div>
+                                                        <div className="text-xs text-gray-600">Qty: {item.quantity}</div>
+                                                    </div>
+                                                    <div className="text-right">
+                                                        <div className="font-semibold">₹{item.price * item.quantity}</div>
+                                                        <div className="text-xs text-gray-500">(₹{item.price} ea)</div>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Summary header (moved after items) */}
+                                    <div className="p-4 border-t border-b flex justify-between items-center flex-wrap">
+                                        <div>
+                                            <h3 className="font-semibold">Order #{order.id}</h3>
+                                            <p className="text-gray-600 text-sm">{new Date(order.date).toLocaleDateString()}</p>
+                                        </div>
+                                        <div className="text-right">
+                                            <p className="font-semibold">₹{order.total}</p>
+                                            <p className="text-green-600 text-sm">Confirmed</p>
+                                            <button
+                                                className="ml-2 mt-2 bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-xs"
+                                                onClick={() => handleCancelOrder(order.id)}
+                                            >
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div className="p-4 bg-gray-50 border-t">
+                                        <h4 className="font-medium mb-1">Shipping to:</h4>
+                                        <p className="text-sm">{order.customer.name}</p>
+                                        <p className="text-sm">{order.customer.phone}</p>
+                                        <p className="text-sm">{order.customer.address}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+function Home() {
+    const [selectedPoster, setSelectedPoster] = useState(null);
+    const [selectedCombo, setSelectedCombo] = useState(null);
+    const [comboType, setComboType] = useState(null);
+    const [sliderIndex, setSliderIndex] = useState(0);
+
+    const categories = [...new Set(posterData.map(poster => poster.category))];
+
+    // Example slider images (replace with your own images if needed)
+    const sliderImages = [
+        'https://ik.imagekit.io/gbhkmaml0k/naruto/aot/Anime%20Movies.png?updatedAt=1759098600292',
+        'https://ik.imagekit.io/gbhkmaml0k/naruto/aot/Anime%20Movies%20(1).png?updatedAt=1759100711643',
+        'https://ik.imagekit.io/gbhkmaml0k/naruto/aot/bv.png?updatedAt=1759100704798',
+    ];
+
+    // Auto-slide every 4 seconds
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setSliderIndex((sliderIndex + 1) % sliderImages.length);
+        }, 4000);
+        return () => clearTimeout(timer);
+    }, [sliderIndex]);
+
+    return (
+        <div>
+            {/* Hero Section with Image Slider (reduced height, with arrows) */}
+            <section className="bg-blue-600 text-white pt-10 pb-6 md:pt-16 md:pb-10">
+                <div className="max-w-7xl mx-auto px-4 flex flex-col items-center">
+                    <div className="w-full max-w-2xl relative mb-4">
+                        {/* Left Arrow */}
+                        <button
+                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full w-8 h-8 flex items-center justify-center z-10 focus:outline-none"
+                            style={{boxShadow:'0 2px 8px #0002'}}
+                            onClick={() => setSliderIndex((sliderIndex - 1 + sliderImages.length) % sliderImages.length)}
+                            aria-label="Previous slide"
+                        >
+                            <i className="fas fa-chevron-left"></i>
+                        </button>
+                        <img
+                            src={sliderImages[sliderIndex]}
+                            alt={`Slide ${sliderIndex + 1}`}
+                            className="rounded-lg shadow-lg w-full h-36 md:h-48 object-cover transition-all duration-500"
+                        />
+                        {/* Right Arrow */}
+                        <button
+                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-700 bg-opacity-70 hover:bg-opacity-90 text-white rounded-full w-8 h-8 flex items-center justify-center z-10 focus:outline-none"
+                            style={{boxShadow:'0 2px 8px #0002'}}
+                            onClick={() => setSliderIndex((sliderIndex + 1) % sliderImages.length)}
+                            aria-label="Next slide"
+                        >
+                            <i className="fas fa-chevron-right"></i>
+                        </button>
+                        {/* Pagination Dots */}
+                        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            {sliderImages.map((_, idx) => (
+                                <button
+                                    key={idx}
+                                    className={`w-2.5 h-2.5 rounded-full border-2 border-white focus:outline-none transition-all duration-200 ${sliderIndex === idx ? 'bg-white' : 'bg-blue-400'}`}
+                                    onClick={() => setSliderIndex(idx)}
+                                    aria-label={`Go to slide ${idx + 1}`}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                    <h1 className="text-2xl md:text-3xl font-bold mb-3">Transform Your Space With Art</h1>
+                    <p className="text-base mb-4">Discover premium quality posters for every taste</p>
+                    <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-3">
+                        <button className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm">Shop Now</button>
+                        <a
+                          href="https://wa.me/7488468139?text=I%20want%20to%20create%20a%20custom%20poster"
+                          className="bg-transparent border-2 border-white text-white px-4 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-sm"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Create Custom Poster
+                          <div> (No extra Charges)</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            {/* Promotional Banner */}
+            <section className="bg-yellow-50 border-b border-yellow-200 py-4">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+                        <div className="flex items-center mb-2 md:mb-0">
+                            <div className="bg-yellow-100 p-2 rounded-full mr-3">
+                                <i className="fas fa-tag text-yellow-600"></i>
+                            </div>
+                            <p className="text-yellow-800 font-medium">Get ₹20 OFF on Online Payments!</p>
+                        </div>
+                        <div className="flex items-center">
+                            <div className="bg-green-100 p-2 rounded-full mr-3">
+                                <i className="fas fa-gift text-green-600"></i>
+                            </div>
+                            <p className="text-green-800 font-medium">orders above ₹999 get 5 Posters Free</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            {/* Categories */}
+            <section className="py-4 max-w-7xl mx-auto px-4">
+                <a id="shop-by-category"></a>
+                <h2 className="text-xl font-bold mb-4 text-center">Shop By Category</h2>
+                <div className="flex flex-wrap justify-center gap-2">
+                    {categories.map(category => (
+                        <a
+                            key={category}
+                            href={`#category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="bg-gray-100 rounded-md px-3 py-1.5 text-center hover:bg-blue-100 transition-colors cursor-pointer"
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <span className="text-xs font-medium text-gray-600">{category}</span>
+                        </a>
+                    ))}
+                </div>
+            </section>
+            
+            {/* Category Sections - Reduced spacing */}
+            {categories.map((category, catIdx) => {
+                const categoryPosters = posterData.filter(poster => poster.category === category);
+                const [scrollRefs] = React.useState(() => Array(categories.length).fill().map(() => React.createRef()));
+                const scrollTo = (catIdx, dir) => {
+                    const ref = scrollRefs[catIdx].current;
+                    if (!ref) return;
+                    const scrollAmount = 240; // width of one card + gap
+                    ref.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
+                };
+                return (
+                    <section key={category} id={`category-${category.toLowerCase().replace(/\s+/g, '-')}`} className="category-section bg-gray-50">
+                        <div className="max-w-7xl mx-auto px-4">
+                            <h2 className="category-title text-2xl font-bold">{category} Posters</h2>
+                            <div className="relative">
+                                <div
+                                    className="flex overflow-x-auto gap-3 pb-2 scrollbar-hide"
+                                    style={{WebkitOverflowScrolling:'touch'}}
+                                    ref={scrollRefs[catIdx]}
+                                >
+                                    {categoryPosters.map(poster => (
+                                        <div style={{minWidth:'180px', flex:'0 0 auto'}} key={poster.id}>
+                                            <PosterCard 
+                                                poster={poster} 
+                                                onSelect={setSelectedPoster}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                                {/* Slider Arrows below images, always visible */}
+                                <div className="flex justify-center items-center gap-2 mt-2">
+                                    <button
+                                        className="bg-blue-600 bg-opacity-90 hover:bg-opacity-100 text-white rounded-full w-7 h-7 flex items-center justify-center shadow focus:outline-none"
+                                        style={{boxShadow:'0 2px 8px #0002', minWidth: '28px', minHeight: '28px'}} 
+                                        onClick={() => scrollTo(catIdx, -1)}
+                                        aria-label="Scroll left"
+                                    >
+                                        <i className="fas fa-chevron-left text-base"></i>
+                                    </button>
+                                    <button
+                                        className="bg-blue-600 bg-opacity-90 hover:bg-opacity-100 text-white rounded-full w-7 h-7 flex items-center justify-center shadow focus:outline-none"
+                                        style={{boxShadow:'0 2px 8px #0002', minWidth: '28px', minHeight: '28px'}} 
+                                        onClick={() => scrollTo(catIdx, 1)}
+                                        aria-label="Scroll right"
+                                    >
+                                        <i className="fas fa-chevron-right text-base"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                );
+            })}
+            
+            {/* Combos Section */}
+            <section className="py-8 max-w-5xl mx-auto px-4">
+                <h2 className="text-2xl font-bold mb-6 text-center">Special Offers</h2>
+                
+                <div className="mb-8 max-w-md mx-auto">
+                    <h3 className="text-xl font-semibold mb-4 text-center">Combo of 2 Posters</h3>
+                    <div className="grid grid-cols-1 gap-6">
+                        {comboData.twoPosters.map(combo => (
+                            <ComboCard 
+                                key={combo.id}
+                                combo={combo}
+                                type={2}
+                                onSelect={(combo, type) => {
+                                    setSelectedCombo(combo);
+                                    setComboType(type);
+                                }}
+                            />
+                        ))}
+                    </div>
+                </div>
+                
+                
+               
+</section>
+
+{/* Product Sizes & Reality Section */}
+<section className="py-12 bg-gradient-to-r from-green-50 to-blue-50">
+    <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-4">Product Sizes & Reality</h2>
+        <p className="text-gray-600 text-center mb-8">See exactly how our different poster sizes look in real life</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Mini Posters */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-purple-400 transition-transform hover:scale-105">
+                <div className="p-4 bg-purple-50 border-b border-purple-200">
+                    <h3 className="text-xl font-bold text-center text-gray-800">Mini Posters</h3>
+                    <p className="text-sm text-center text-gray-600">5 × 7.5 cm</p>
+                </div>
+                
+                <div className="p-4">
+                    <div className="mb-4 responsive-iframe-wrapper rounded-lg overflow-hidden">
+                        {/* Replaced <video> with an <iframe> for embeds; wrapper keeps aspect ratio responsive */}
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/X4MQP8Stm34?rel=0&modestbranding=1&mute=1"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    
+                    <div className="text-center mb-4">
+                        <div className="bg-purple-100 rounded-lg p-3 mb-3">
+                            <i className="fas fa-bookmark text-purple-600 text-2xl mb-2"></i>
+                            <p className="font-semibold text-gray-800">Mini Size</p>
+                            <p className="text-sm text-gray-600">Compact & cute</p>
+                        </div>
+                    </div>
+                    
+                    <div className="flex justify-center items-center mb-4">
+                        <span className="text-purple-600 font-bold text-xl">₹9</span>
+                    </div>
+                    
+                    <div className="bg-gray-50 rounded-lg p-3">
+                        <h4 className="font-semibold mb-2 text-sm">Perfect For:</h4>
+                        <ul className="text-xs text-gray-600 space-y-1">
+                            <li>✓ Laptop stickers</li>
+                            <li>✓ Notebook covers</li>
+                            <li>✓ Small collections</li>
+                            <li>✓ One Free with orders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* A4 Size */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-400 transition-transform hover:scale-105">
+                <div className="p-4 bg-blue-50 border-b border-blue-200">
+                    <h3 className="text-xl font-bold text-center text-gray-800">A4 Size</h3>
+                    <p className="text-sm text-center text-gray-600">21.0 × 29.7 cm</p>
+                </div>
+                
+                   <div className="p-4">
+                    <div className="mb-4 responsive-iframe-wrapper rounded-lg overflow-hidden">
+                        {/* Replaced <video> with an <iframe> for embeds; wrapper keeps aspect ratio responsive */}
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/4w2OsQdJxGA?mute=1&rel=0&autoplay=0"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    
+                    <div className="text-center mb-4">
+                        <div className="bg-blue-100 rounded-lg p-2 mb-2">
+                            <i className="fas fa-file-image text-blue-600 text-xl mb-1"></i>
+                            <p className="font-semibold text-gray-800 text-sm">Standard Size</p>
+                            <p className="text-xs text-gray-600">Perfect for desks</p>
+                        </div>
+                    </div>
+                    
+                    <div className="flex justify-center items-center mb-4">
+                        <div>
+                            <span className="text-blue-600 font-bold text-xl">₹25</span>
+                            <span className="text-gray-500 line-through text-sm ml-2">₹59</span>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 rounded-lg p-2">
+                        <h4 className="font-semibold mb-1 text-xs">Perfect For:</h4>
+                        <ul className="text-xs text-gray-600 space-y-0.5">
+                            <li>✓ Study table decoration</li>
+                            <li>✓ Office desk</li>
+                            <li>✓ Small spaces</li>
+                            <li>✓ Budget-friendly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* 12×18 Size */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-green-400 transition-transform hover:scale-105">
+                <div className="p-2 bg-green-50 border-b border-green-200">
+                    <h3 className="text-lg font-bold text-center text-gray-800">12×18 Size</h3>
+                    <p className="text-xs text-center text-gray-600">30.5 × 45.7 cm</p>
+                </div>
+                
+                   <div className="p-4">
+                    <div className="mb-4 responsive-iframe-wrapper rounded-lg overflow-hidden">
+                        {/* Replaced <video> with an <iframe> for embeds; wrapper keeps aspect ratio responsive */}
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/Kzbn8c_f5fU?mute=1&rel=0&autoplay=0"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    
+                    <div className="text-center mb-4">
+                        <div className="bg-green-100 rounded-lg p-2 mb-2">
+                            <i className="fas fa-expand text-green-600 text-xl mb-1"></i>
+                            <p className="font-semibold text-gray-800 text-sm">Medium Size</p>
+                            <p className="text-xs text-gray-600">Ideal for walls</p>
+                        </div>
+                    </div>
+                    
+                    <div className="flex justify-center items-center mb-4">
+                        <div>
+                            <span className="text-green-600 font-bold text-xl">₹59</span>
+                            <span className="text-gray-500 line-through text-sm ml-2">₹109</span>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 rounded-lg p-3">
+                        <h4 className="font-semibold mb-2 text-sm">Perfect For:</h4>
+                        <ul className="text-xs text-gray-600 space-y-1">
+                            <li>✓ Bedroom walls</li>
+                            <li>✓ Living room decor</li>
+                            <li>✓ Feature walls</li>
+                            <li>✓ Statement pieces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* A4 with Frame */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-yellow-400 transition-transform hover:scale-105">
+                <div className="p-2 bg-yellow-50 border-b border-yellow-200">
+                    <h3 className="text-lg font-bold text-center text-gray-800">A4 with Frame</h3>
+                    <p className="text-xs text-center text-gray-600">Ready to hang</p>
+                </div>
+                
+                    <div className="p-4">
+                    <div className="mb-4 responsive-iframe-wrapper rounded-lg overflow-hidden">
+                        {/* Replaced <video> with an <iframe> for embeds; wrapper keeps aspect ratio responsive */}
+                        <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/Kzbn8c_f5fU?mute=1&rel=0&autoplay=0"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    
+                    <div className="text-center mb-4">
+                        <div className="bg-yellow-100 rounded-lg p-2 mb-2">
+                            <i className="fas fa-border-all text-yellow-600 text-xl mb-1"></i>
+                            <p className="font-semibold text-gray-800 text-sm">Framed Display</p>
+                            <p className="text-xs text-gray-600">Premium look</p>
+                        </div>
+                    </div>
+                    
+                    <div className="flex justify-center items-center mb-4">
+                        <div>
+                            <span className="text-yellow-600 font-bold text-xl">₹249</span>
+                            <span className="text-gray-500 line-through text-sm ml-2">₹499</span>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 rounded-lg p-3">
+                        <h4 className="font-semibold mb-2 text-sm">Perfect For:</h4>
+                        <ul className="text-xs text-gray-600 space-y-1">
+                            <li>✓ Office decor</li>
+                            <li>✓ Gift purposes</li>
+                            <li>✓ Professional look</li>
+                            <li>✓ Ready to display</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{/* Customer Reviews Section */}
+<section className="py-12 bg-gradient-to-r from-indigo-50 to-purple-50">
+    <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-4">What Our Customers Say</h2>
+        <p className="text-gray-600 text-center mb-8">Real reviews from real customers</p>
+        
+        <div className="relative">
+            {/* Left Arrow Button */}
+            <button 
+                onClick={() => scrollContainer('reviews-container', 'left')}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg border border-gray-200"
+                style={{left: '-12px'}}
+            >
+                <i className="fas fa-chevron-left"></i>
+            </button>
+
+            {/* Right Arrow Button */}
+            <button 
+                onClick={() => scrollContainer('reviews-container', 'right')}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg border border-gray-200"
+                style={{right: '-12px'}}
+            >
+                <i className="fas fa-chevron-right"></i>
+            </button>
+
+            {/* Reviews Slider Container */}
+            <div id="reviews-container" className="flex overflow-x-auto gap-4 pb-8 custom-scrollbar" 
+                style={{WebkitOverflowScrolling: 'touch', scrollBehavior: 'smooth'}}>
+                {/* Review 1 */}
+                <div className="flex-shrink-0 w-48">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                        <div className="relative" style={{paddingBottom: '140%'}}> {/* reduced aspect ratio */}
+                          <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/X9rgppF5G-Q?autoplay=1&mute=1&loop=1&playlist=X9rgppF5G-Q"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-center mb-2">
+                                <div className="flex text-yellow-400">
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                </div>
+                                <span className="ml-2 text-sm font-semibold">5.0</span>
+                            </div>
+                            <p className="text-sm text-gray-600">"The quality exceeded my expectations! Perfect for my room decor."</p>
+                            <p className="text-xs text-gray-500 mt-2">- Rahul Sharma</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Review 2 */}
+                <div className="flex-shrink-0 w-48">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                        <div className="relative" style={{paddingBottom: '140%'}}> {/* reduced aspect ratio */}
+                           <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/MAfQGRbIgIM?autoplay=1&mute=1&loop=1&playlist=MAfQGRbIgIM"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-center mb-2">
+                                <div className="flex text-yellow-400">
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                </div>
+                                <span className="ml-2 text-sm font-semibold">5.0</span>
+                            </div>
+                            <p className="text-sm text-gray-600">"Fast delivery and amazing print quality. Will order again!"</p>
+                            <p className="text-xs text-gray-500 mt-2">- Priya Patel</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Review 3 */}
+                <div className="flex-shrink-0 w-48">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                        <div className="relative" style={{paddingBottom: '140%'}}> {/* reduced aspect ratio */}
+                              <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.yo&loop=1&playlist=X9rgppF5G-Q"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-center mb-2">
+                                <div className="flex text-yellow-400">
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star-half-alt"></i>
+                                </div>
+                                <span className="ml-2 text-sm font-semibold">4.5</span>
+                            </div>
+                            <p className="text-sm text-gray-600">"Love my custom poster! Exactly what I wanted for my gaming room."</p>
+                            <p className="text-xs text-gray-500 mt-2">- Ankit Verma</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Review 4 */}
+                <div className="flex-shrink-0 w-48">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                        <div className="relative" style={{paddingBottom: '140%'}}> {/* reduced aspect ratio */}
+                             <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.youtu1&playlist=X9rgppF5G-Q"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-center mb-2">
+                                <div className="flex text-yellow-400">
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                </div>
+                                <span className="ml-2 text-sm font-semibold">5.0</span>
+                            </div>
+                            <p className="text-sm text-gray-600">"The colors are so vibrant! Better than I expected. Highly recommend!"</p>
+                            <p className="text-xs text-gray-500 mt-2">- Sneha Gupta</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Review 5 */}
+                <div className="flex-shrink-0 w-48">
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                        <div className="relative" style={{paddingBottom: '140%'}}> {/* reduced aspect ratio */}
+                           <iframe
+                            className="absolute inset-0 w-full h-full"
+                            src="https://www.yourgppF5G-Q"
+                            title="Mini Poster Demo"
+                            frameBorder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
+                        <div className="p-4">
+                            <div className="flex items-center mb-2">
+                                <div className="flex text-yellow-400">
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                    <i className="fas fa-star"></i>
+                                </div>
+                                <span className="ml-2 text-sm font-semibold">5.0</span>
+                            </div>
+                            <p className="text-sm text-gray-600">"Perfect gift for my friend who loves anime. She was so happy!"</p>
+                            <p className="text-xs text-gray-500 mt-2">- Rohit Kumar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Custom Scrollbar Indicator */}
+            <div className="mt-4 px-4">
+                <div className="bg-gray-200 rounded-full h-2 w-full">
+                    <div className="bg-purple-600 rounded-full h-2 w-1/5" id="scrollbar-progress"></div>
+                </div>
+                <div className="flex justify-between text-xs text-gray-500 mt-2">
+                    <span>Swipe to see more reviews</span>
+                    <span id="scroll-position">1/5</span>
+                </div>
+            </div>
+        </div>
+
+        {/* Photo Reviews Section */}
+        <div className="mt-12">
+            <h3 className="text-xl font-bold text-center mb-6">Photo Reviews</h3>
+            <div className="relative">
+                {/* Left Arrow Button */}
+                <button 
+                    onClick={() => scrollContainer('photo-reviews-container', 'left')}
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg border border-gray-200"
+                    style={{left: '-12px'}}
+                >
+                    <i className="fas fa-chevron-left"></i>
+                </button>
+
+                {/* Right Arrow Button */}
+                <button 
+                    onClick={() => scrollContainer('photo-reviews-container', 'right')}
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg border border-gray-200"
+                    style={{right: '-12px'}}
+                >
+                    <i className="fas fa-chevron-right"></i>
+                </button>
+
+                <div id="photo-reviews-container" className="flex overflow-x-auto gap-4 pb-8 custom-scrollbar" 
+                    style={{WebkitOverflowScrolling: 'touch', scrollBehavior: 'smooth'}}>
+                    {/* Photo Review 1 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/Screenshot%202025-11-02%20at%201.14.53%E2%80%AFPM.png?updatedAt=1762069753808" 
+                                    alt="Customer Review 1"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">5.0</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"The printing quality is amazing! Loved the colors."</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Vikram Singh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Photo Review 2 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/Screenshot%202025-11-02%20at%201.17.15%E2%80%AFPM.png?updatedAt=1762069751262" 
+                                    alt="Customer Review 2"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">5.0</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Perfect size for my room decor. Very satisfied!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Anjali Khanna</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Photo Review 3 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApprty%20Image%202025-11-05%20at%2020.34.39.jpeg?updatedAt=1762355776647" 
+                                    alt="Customer Review 3"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">5.0</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Amazing quality and quick delivery. Great service!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Ravi Kumar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Photo Review 4 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Image%202025yy-11-05%20at%2020.34.38.jpeg?updatedAt=1762355775993" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+                     {/* Photo Review 5 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Image%202025-tytryrt11-05%20at%2020.34.40.jpeg?updatedAt=1762355770162" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     {/* Photo Review 6 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Image%202tytyrty025-11-05%20at%2020.34.39.jpeg?updatedAt=1762355769844" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+ {/* Photo Review 7 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Imagerytry%202025-11-05%20at%2020.34.45.jpeg?updatedAt=1762355769857" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+ {/* Photo Review 8 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Itrytrmage%202025-11-05%20at%2020.34.46.jpeg?updatedAt=1762355769606" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+ {/* Photo Review 9 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatrtytrysApp%20Image%202025-11-05%20at%2020.34.41.jpeg?updatedAt=1762355769752" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+ {/* Photo Review 10 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/rt.jpeg?updatedAt=1762355769375" 
+                                    alt="Customer Review 4"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">4.5</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Beautiful frame and excellent packaging!"</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Neha Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* Photo Review 11 */}
+                    <div className="flex-shrink-0 w-56">
+                        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-200">
+                            <div className="relative" style={{paddingBottom: '100%'}}>
+                                <img 
+                                    src="https://ik.imagekit.io/gbhkmaml0k/customer%20review/WhatsApp%20Image%202025-11-05%20at%2020.34.38.jpeg?updatedAt=1762355775930" 
+                                    alt="Customer Review 5"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-3">
+                                <div className="flex items-center mb-2">
+                                    <div className="flex text-yellow-400">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                    </div>
+                                    <span className="ml-2 text-xs font-semibold">5.0</span>
+                                </div>
+                                <p className="text-xs text-gray-600">"Exactly what I wanted! Will order again soon."</p>
+                                <p className="text-[11px] text-gray-500 mt-2">- Arjun Reddy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Photo Reviews Scrollbar Indicator */}
+                <div className="mt-4 px-4">
+                    <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-purple-600 rounded-full h-2 w-1/5" id="photo-scrollbar-progress"></div>
+                    </div>
+                    <div className="flex justify-between text-xs text-gray-500 mt-2">
+                        <span>Swipe to see more photo reviews</span>
+                        <span id="photo-scroll-position">1/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div className="text-3xl font-bold text-purple-600">500+</div>
+                <div className="text-sm text-gray-600">Happy Customers</div>
+            </div>
+            <div>
+                <div className="text-3xl font-bold text-purple-600">4.8/5</div>
+                <div className="text-sm text-gray-600">Average Rating</div>
+            </div>
+            <div>
+                <div className="text-3xl font-bold text-purple-600">1000+</div>
+                <div className="text-sm text-gray-600">Posters Delivered</div>
+            </div>
+            <div>
+                <div className="text-3xl font-bold text-purple-600">98%</div>
+                <div className="text-sm text-gray-600">Satisfaction Rate</div>
+            </div>
+        </div>
+    </div>
+
+    {/* Add this script for scrollbar functionality */}
+    <script dangerouslySetInnerHTML={{
+        __html: `
+            document.addEventListener('DOMContentLoaded', function() {
+                // Function to setup review container scrolling
+                const setupReviewContainer = (containerId, progressId, positionId) => {
+                    const container = document.getElementById(containerId);
+                    const progress = document.getElementById(progressId);
+                    const position = document.getElementById(positionId);
+
+                    if (!container || !progress || !position) return;
+
+                    const getGap = (el) => {
+                        try {
+                            const g = getComputedStyle(el).gap || getComputedStyle(el).columnGap || '24px';
+                            return parseInt(g, 10) || 24;
+                        } catch (e) { return 24; }
+                    };
+
+                    const updateProgress = () => {
+                        const scrollWidth = container.scrollWidth - container.clientWidth;
+                        const scrollLeft = container.scrollLeft;
+                        const progressPercentage = scrollWidth > 0 ? (scrollLeft / scrollWidth) * 100 : 0;
+                        progress.style.width = Math.min(100, Math.max(0, progressPercentage)) + '%';
+
+                        const first = container.querySelector('.flex-shrink-0');
+                        const gap = getGap(container);
+                        const itemWidth = first ? (first.offsetWidth + gap) : container.clientWidth;
+                        const currentPosition = itemWidth ? Math.round(scrollLeft / itemWidth) + 1 : 1;
+                        const totalItems = container.children.length || 1;
+                        position.textContent = Math.min(totalItems, Math.max(1, currentPosition)) + '/' + totalItems;
+                    };
+
+                    // Initial update
+                    updateProgress();
+
+                    container.addEventListener('scroll', updateProgress, { passive: true });
+
+                    // Add drag-to-scroll (mouse + touch)
+                    let isDown = false;
+                    let startX = 0;
+                    let scrollStart = 0;
+
+                    return { container, isDown, startX, scrollStart, updateProgress };
+                };
+
+                // Setup video reviews container
+                const videoReviews = setupReviewContainer(
+                    'reviews-container',
+                    'scrollbar-progress',
+                    'scroll-position'
+                );
+
+                // Setup photo reviews container
+                const photoReviews = setupReviewContainer(
+                    'photo-reviews-container',
+                    'photo-scrollbar-progress',
+                    'photo-scroll-position'
+                );
+
+                // Common event handlers for both containers
+                [videoReviews, photoReviews].forEach(reviews => {
+                    if (!reviews || !reviews.container) return;
+
+                    const pointerDown = (e) => {
+                        reviews.isDown = true;
+                        reviews.startX = (e.touches && e.touches[0] ? e.touches[0].pageX : e.pageX) || 0;
+                        reviews.scrollStart = reviews.container.scrollLeft;
+                        reviews.container.classList.add('dragging');
+                    };
+
+                    const pointerMove = (e) => {
+                        if (!reviews.isDown) return;
+                        const x = (e.touches && e.touches[0] ? e.touches[0].pageX : e.pageX) || 0;
+                        const walk = reviews.startX - x;
+                        reviews.container.scrollLeft = reviews.scrollStart + walk;
+                    };
+
+                    const pointerUp = () => {
+                        reviews.isDown = false;
+                        reviews.container.classList.remove('dragging');
+                    };
+
+                    // Mouse events
+                    reviews.container.addEventListener('mousedown', pointerDown);
+                    reviews.container.addEventListener('mousemove', pointerMove);
+                    reviews.container.addEventListener('mouseleave', pointerUp);
+                    reviews.container.addEventListener('mouseup', pointerUp);
+
+                    // Touch events
+                    reviews.container.addEventListener('touchstart', pointerDown, { passive: true });
+                    reviews.container.addEventListener('touchmove', pointerMove, { passive: false });
+                    reviews.container.addEventListener('touchend', pointerUp);
+                });
+            });
+        `
+    }} />
+</section>
+
+
+
+
+
+<style>{`
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.custom-scrollbar.dragging, #reviews-container.dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Responsive iframe wrapper: default 16:9 aspect ratio, fills container */
+.responsive-iframe-wrapper {
+    position: relative;
+    width: 100%;
+}
+.responsive-iframe-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 */
+}
+.responsive-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+`}
+
+</style>
+            {/* Product Detail Modal */}
+            {selectedPoster && (
+                <ProductDetail 
+                    poster={selectedPoster} 
+                    onClose={() => setSelectedPoster(null)}
+                />
+            )}
+            
+            {/* Combo Detail Modal */}
+            {selectedCombo && (
+                <ProductDetail 
+                    poster={selectedCombo}
+                    onClose={() => {
+                        setSelectedCombo(null);
+                        setComboType(null);
+                    }}
+                    isCombo={true}
+                    comboType={comboType}
+                />
+            )}
+        </div>
+    );
+}
+
+        function App() {
+            const [currentView, setCurrentView] = useState('home');
+            const [routeParam, setRouteParam] = useState(null);
+            
+            useEffect(() => {
+                const handleHashChange = () => {
+                    const hash = window.location.hash.substring(1);
+                    
+                    if (hash === '') {
+                        setCurrentView('home');
+                        setRouteParam(null);
+                    } else if (hash === 'cart') {
+                        setCurrentView('cart');
+                    } else if (hash === 'checkout') {
+                        setCurrentView('checkout');
+                    } else if (hash === 'my-orders') {
+                        setCurrentView('my-orders');
+                    } else if (hash.startsWith('order-confirmation/')) {
+                        setCurrentView('order-confirmation');
+                        setRouteParam(hash.split('/')[1]);
+                    } else if (hash.startsWith('category-')) {
+                        setCurrentView('home');
+                    } else {
+                        setCurrentView('home');
+                    }
+                };
+                
+                window.addEventListener('hashchange', handleHashChange);
+                handleHashChange(); // Initial call
+                
+                return () => window.removeEventListener('hashchange', handleHashChange);
+            }, []);
+            
+            const renderView = () => {
+                switch (currentView) {
+                    case 'home':
+                        return <Home />;
+                    case 'cart':
+                        return <Cart />;
+                    case 'checkout':
+                        return <Checkout />;
+                    case 'order-confirmation':
+                        return <OrderConfirmation orderId={routeParam} />;
+                    case 'my-orders':
+                        return <MyOrders />;
+                    default:
+                        return <Home />;
+                }
+            };
+            
+            return (
+                <CartProvider>
+                    <div className="min-h-screen flex flex-col">
+                        <Navbar />
+                        <main className="flex-grow">
+                            {renderView()}
+                        </main>
+                        <footer className="bg-gray-800 text-white py-8">
+                            <div className="max-w-7xl mx-auto px-4">
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    <div>
+                                        <h3 className="text-lg font-semibold mb-4">About US</h3>
+                                        <p className="text-gray-400">Yuzi Gallery is a curated online art platform connecting you with extraordinary art from around the world. We represent a diverse roster of talented contemporary artists, making it easy to discover and own original artwork that inspires.
+
+Our core belief is simple: Great art is for everyone. We are dedicated to supporting artists' careers and helping you find pieces that perfectly capture your vision and style. Explore, discover, and find your inspiration with Yuzi Gallery.
+
+</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+                                        <ul className="space-y-2 text-gray-400">
+                                            <li><a href="#home" className="hover:text-white">Home</a></li>
+                                            <li><span className="hover:text-white cursor-pointer">Anime</span></li>
+                                            <li><a href="#category-marvel" className="hover:text-white">Hentai (noty ho rha h)</a></li>
+                                            <li><a href="#cart" className="hover:text-white">Cart</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+                                        <p className="text-gray-400 mb-2">yuzigallery@zohomail.in</p>
+                                    
+                                    </div>
+                                </div>
+                                <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                                    <div className="flex justify-center items-center gap-6 mb-4">
+                                        <a href="https://wa.me/917488468139" target="_blank" rel="noopener noreferrer" className="hover:text-green-400" title="WhatsApp">
+                                            <i className="fab fa-whatsapp text-2xl"></i>
+                                        </a>
+                                        <a href="#" className="hover:text-pink-400" title="Instagram (coming soon)">
+                                            <a href="https://www.instagram.com/yuzigallery?igsh=eWVzNHE0dzNrZDhm" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400" title="Instagram">
+                                                <i className="fab fa-instagram text-2xl"></i>
+                                            </a>
+                                        </a>
+                                    </div>
+                                    <p>© 2025 YuziGallery. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </CartProvider>
+            );
+        }
+
+        // Intercept category anchor clicks and perform a precise scroll with offset
+        // so the category title is visible above sticky headers. Also add a brief
+        // highlight to the target section so it's obvious which section opened.
+        document.addEventListener('click', function(e) {
+            try {
+                const a = e.target.closest && e.target.closest('a[href^="#category-"]');
+                if (!a) return;
+                e.preventDefault();
+
+                const href = a.getAttribute('href') || '';
+                const targetId = href.startsWith('#') ? href.slice(1) : href;
+                const el = document.getElementById(targetId);
+
+                const HEADER_OFFSET = 100; // pixels to leave above the section (adjustable)
+
+                const scrollToElement = (node) => {
+                    const rect = node.getBoundingClientRect();
+                    const top = rect.top + window.pageYOffset - HEADER_OFFSET;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                    // update hash without immediate jump
+                    history.replaceState(null, '', '#' + node.id);
+                    // flash highlight
+                    const prevOutline = node.style.boxShadow;
+                    node.style.boxShadow = '0 0 0 6px rgba(79,70,229,0.12)';
+                    setTimeout(() => { node.style.boxShadow = prevOutline || ''; }, 900);
+                };
+
+                if (el) {
+                    scrollToElement(el);
+                    return;
+                }
+
+                // Fallback: try to match normalized category ids defensively
+                const normalized = targetId.replace(/^category-/, '').toLowerCase();
+                const candidates = document.querySelectorAll('[id^="category-"]');
+                for (const node of candidates) {
+                    const name = node.id.replace(/^category-/, '').toLowerCase();
+                    if (name === normalized) {
+                        scrollToElement(node);
+                        return;
+                    }
+                }
+            } catch (err) {
+                console.error('Error handling category link click', err);
+            }
+        });
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
