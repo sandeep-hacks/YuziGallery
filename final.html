@@ -54,6 +54,36 @@
         .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
+
+
+         /* Fix for all poster images */
+        .poster-image {
+            width: 100% !important;
+            height: 180px !important;
+            object-fit: cover !important;
+            object-position: center !important;
+            -webkit-object-fit: cover !important;
+            -webkit-object-position: center !important;
+            display: block !important;
+            max-width: 100% !important;
+        }
+
+        /* Fix for all cards */
+        .poster-card {
+            width: 180px !important;
+            flex: 0 0 auto !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        /* Safari-specific fixes */
+        .scroll-container {
+            display: -webkit-flex !important;
+            display: flex !important;
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            gap: 12px !important;
+        }
     </style>
 </head>
 
@@ -2278,7 +2308,7 @@ function Home() {
                         {/* Replaced <video> with an <iframe> for embeds; wrapper keeps aspect ratio responsive */}
                         <iframe
                             className="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/Kzbn8c_f5fU?mute=1&rel=0&autoplay=0"
+                            src="https://www.youtube.com/embed/R-xLfb73FnI?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&playlist=R-xLfb73FnI"
                             title="Mini Poster Demo"
                             frameBorder="0"
                             allow="autoplay; encrypted-media; picture-in-picture"
@@ -3187,5 +3217,6 @@ Our core belief is simple: Great art is for everyone. We are dedicated to suppor
 
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
+    
 </body>
 </html>
